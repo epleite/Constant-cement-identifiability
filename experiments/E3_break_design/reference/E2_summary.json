@@ -1,0 +1,278 @@
+{
+  "experiment": "E2 stability, LOTO transport, and hierarchical comparison",
+  "model": "constant_cement Scheme 1, frozen RPIA v1 forward model",
+  "bootstrap_interpretation": "conditional within-trajectory uncertainty for two Hugin trajectories; not between-trajectory population uncertainty",
+  "bootstrap_primary": {
+    "scheme": "non-circular moving-block bootstrap, stratified by trajectory",
+    "block_length_samples": 5,
+    "block_length_m": 20,
+    "n_requested": 400,
+    "n_success": 400,
+    "bound_hit_rate": 0.005,
+    "corr_A_Gamma_raw": 0.8067865911723583,
+    "corr_A_Gamma_adjusted": 0.9032025350093484
+  },
+  "coordinate_stability": {
+    "A_raw": {
+      "point": 0.3026134543411656,
+      "median": 0.3038935513014959,
+      "ci95": [
+        0.2909756266800667,
+        0.3109157439846246
+      ],
+      "cv_abs": 0.016275810198222797
+    },
+    "Gamma_raw": {
+      "point": 1.4911805471801822,
+      "median": 1.4926539299622976,
+      "ci95": [
+        1.4424820743681779,
+        1.5253764690154115
+      ],
+      "cv_abs": 0.014122811988926464
+    },
+    "A_adjusted": {
+      "point": 0.3028371625535019,
+      "median": 0.3040616194921516,
+      "ci95": [
+        0.2901499258743855,
+        0.3113995079927066
+      ],
+      "cv_abs": 0.017000713561968788
+    },
+    "Gamma_adjusted": {
+      "point": 1.61812043572011,
+      "median": 1.6206998802556023,
+      "ci95": [
+        1.5528427866918688,
+        1.6680187411427139
+      ],
+      "cv_abs": 0.017432656646001472
+    }
+  },
+  "loto_level_transport_RPIA": {
+    "19A_to_BT2_raw": {
+      "qstar_ratio": 0.9935845384951192,
+      "local_exponential_ratio": 1.4730789812051956
+    },
+    "19A_to_BT2_adjusted": {
+      "qstar_ratio": 1.0003109123299696,
+      "local_exponential_ratio": 1.4823263917785614
+    },
+    "BT2_to_19A_raw": {
+      "qstar_ratio": 1.0329195078027003,
+      "local_exponential_ratio": 6.427020802748894
+    },
+    "BT2_to_19A_adjusted": {
+      "qstar_ratio": 1.0296636508696873,
+      "local_exponential_ratio": 6.419268356034795
+    }
+  },
+  "loto_shape_local_window": {
+    "19A_to_BT2_raw_train_qstar": {
+      "rms_lnCn_error": 0.010846938162946683,
+      "median_abs_percent_Cn_error": 1.214235708294309
+    },
+    "19A_to_BT2_raw_train_local_exponential": {
+      "rms_lnCn_error": 0.27748673585552625,
+      "median_abs_percent_Cn_error": 30.79748008959737
+    },
+    "19A_to_BT2_raw_constant_Cn": {
+      "rms_lnCn_error": 0.3363533678058019,
+      "median_abs_percent_Cn_error": 36.541936160277764
+    },
+    "19A_to_BT2_adjusted_train_qstar": {
+      "rms_lnCn_error": 0.012694876970180579,
+      "median_abs_percent_Cn_error": 1.4254591382405701
+    },
+    "19A_to_BT2_adjusted_train_local_exponential": {
+      "rms_lnCn_error": 0.2790148915400619,
+      "median_abs_percent_Cn_error": 30.967655184184316
+    },
+    "19A_to_BT2_adjusted_constant_Cn": {
+      "rms_lnCn_error": 0.33583476261227985,
+      "median_abs_percent_Cn_error": 36.51519476005167
+    },
+    "BT2_to_19A_raw_train_qstar": {
+      "rms_lnCn_error": 0.0032496376393220906,
+      "median_abs_percent_Cn_error": 0.2550773693083208
+    },
+    "BT2_to_19A_raw_train_local_exponential": {
+      "rms_lnCn_error": 0.8886055131239933,
+      "median_abs_percent_Cn_error": 62.526940508787646
+    },
+    "BT2_to_19A_raw_constant_Cn": {
+      "rms_lnCn_error": 0.0905593765382807,
+      "median_abs_percent_Cn_error": 6.057137208669472
+    },
+    "BT2_to_19A_adjusted_train_qstar": {
+      "rms_lnCn_error": 0.004131753543742513,
+      "median_abs_percent_Cn_error": 0.3190090127215939
+    },
+    "BT2_to_19A_adjusted_train_local_exponential": {
+      "rms_lnCn_error": 0.8904329366358458,
+      "median_abs_percent_Cn_error": 62.58918899150602
+    },
+    "BT2_to_19A_adjusted_constant_Cn": {
+      "rms_lnCn_error": 0.0883416342745131,
+      "median_abs_percent_Cn_error": 5.826209135456084
+    }
+  },
+  "hierarchical_comparison": {
+    "observed_data_fixed_nuisance": {
+      "qstar_constraint_cost": 0.09311069472079225,
+      "Cn_constraint_cost": 0.25600439287700283,
+      "delta_Cn_minus_qstar": 0.16289369815621058
+    },
+    "observed_data_nonlinear_MAP": {
+      "qstar_constraint_cost": 0.05363447163851731,
+      "Cn_constraint_cost": 0.024238288953924325,
+      "delta_Cn_minus_qstar": -0.029396182684592986
+    },
+    "local_geometry_local_raw_geometry": {
+      "qstar_constraint_cost": 0.0046227557846680875,
+      "Cn_constraint_cost": 0.0019652779838534146,
+      "delta_Cn_minus_qstar": -0.002657477800814673
+    },
+    "local_geometry_local_Schur_geometry": {
+      "qstar_constraint_cost": 0.0015864206741858845,
+      "Cn_constraint_cost": 0.0012973766079149157,
+      "delta_Cn_minus_qstar": -0.00028904406627096877
+    }
+  },
+  "hierarchical_bootstrap": {
+    "n": 400,
+    "median_delta_Cn_minus_qstar": -0.5264706524237823,
+    "ci95_delta_Cn_minus_qstar": [
+      -9.235141547984021,
+      0.6360822339821817
+    ],
+    "qstar_preferred_fraction": 0.29
+  },
+  "loto_bootstrap_summary": [
+    {
+      "train": "19A",
+      "test": "BT2",
+      "metric": "qstar_ratio_raw",
+      "n_valid": 300,
+      "median": 1.0028644133922207,
+      "q02p5": 0.872005418275922,
+      "q16": 0.9408991732337707,
+      "q84": 1.0552044696646428,
+      "q97p5": 1.1094636015986403,
+      "probability_within_5_percent": 0.62,
+      "probability_within_10_percent": 0.89
+    },
+    {
+      "train": "19A",
+      "test": "BT2",
+      "metric": "qstar_ratio_adjusted",
+      "n_valid": 300,
+      "median": 1.0079959699242829,
+      "q02p5": 0.8811836188502057,
+      "q16": 0.9499503844164302,
+      "q84": 1.0600789941419557,
+      "q97p5": 1.1145054835324093,
+      "probability_within_5_percent": 0.6066666666666667,
+      "probability_within_10_percent": 0.89
+    },
+    {
+      "train": "19A",
+      "test": "BT2",
+      "metric": "local_exponential_ratio_raw",
+      "n_valid": 300,
+      "median": 1.37346582120902,
+      "q02p5": 1.0822670833539743,
+      "q16": 1.1848312635919764,
+      "q84": 1.6378048010595112,
+      "q97p5": 1.9107941874849887,
+      "probability_within_5_percent": 0.013333333333333334,
+      "probability_within_10_percent": 0.05
+    },
+    {
+      "train": "19A",
+      "test": "BT2",
+      "metric": "local_exponential_ratio_adjusted",
+      "n_valid": 300,
+      "median": 1.3786499215560153,
+      "q02p5": 1.0837953384131582,
+      "q16": 1.186945859640748,
+      "q84": 1.6530679984462562,
+      "q97p5": 1.9403318254138315,
+      "probability_within_5_percent": 0.013333333333333334,
+      "probability_within_10_percent": 0.05
+    },
+    {
+      "train": "BT2",
+      "test": "19A",
+      "metric": "qstar_ratio_raw",
+      "n_valid": 300,
+      "median": 1.0296829223541235,
+      "q02p5": 0.952069109303509,
+      "q16": 0.9839521665518455,
+      "q84": 1.0798460396456,
+      "q97p5": 1.129441443967063,
+      "probability_within_5_percent": 0.67,
+      "probability_within_10_percent": 0.93
+    },
+    {
+      "train": "BT2",
+      "test": "19A",
+      "metric": "qstar_ratio_adjusted",
+      "n_valid": 300,
+      "median": 1.0272909478758923,
+      "q02p5": 0.9506165361575025,
+      "q16": 0.9810770732548099,
+      "q84": 1.076236941327128,
+      "q97p5": 1.125443709356902,
+      "probability_within_5_percent": 0.6866666666666666,
+      "probability_within_10_percent": 0.94
+    },
+    {
+      "train": "BT2",
+      "test": "19A",
+      "metric": "local_exponential_ratio_raw",
+      "n_valid": 300,
+      "median": 4.9083771257472275,
+      "q02p5": 1.0803483988665772,
+      "q16": 1.6449662219051866,
+      "q84": 532.0546368074125,
+      "q97p5": 639.7064442734286,
+      "probability_within_5_percent": 0.02,
+      "probability_within_10_percent": 0.043333333333333335
+    },
+    {
+      "train": "BT2",
+      "test": "19A",
+      "metric": "local_exponential_ratio_adjusted",
+      "n_valid": 300,
+      "median": 4.902678882485643,
+      "q02p5": 1.079714081247924,
+      "q16": 1.6427013685797751,
+      "q84": 530.8593370317262,
+      "q97p5": 635.4748293159153,
+      "probability_within_5_percent": 0.02,
+      "probability_within_10_percent": 0.043333333333333335
+    }
+  ],
+  "frozen_scale": {
+    "Vp": 215.0496210570881,
+    "Vs": 154.7536784743924,
+    "rho": 0.018165804633494303
+  },
+  "operating_points": {
+    "19A": {
+      "Vcem": 0.024592733574879642,
+      "Cn": 4.7029523059115945
+    },
+    "BT2": {
+      "Vcem": 0.002709648210837285,
+      "Cn": 8.292355473009664
+    },
+    "pooled": {
+      "Vcem": 0.012546045825196089,
+      "Cn": 5.436001877454284
+    }
+  },
+  "quick_mode": false
+}

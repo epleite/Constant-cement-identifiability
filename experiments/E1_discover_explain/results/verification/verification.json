@@ -1,0 +1,247 @@
+{
+  "status": "PASS",
+  "checks_passed": 43,
+  "diagnostics": {
+    "frozen_core_sha256": {
+      "passed": true,
+      "value": "b41a6ec9471ffccb03d586cb8c8c1231a937a909e72f3aeb9434b03b2d1ab80a"
+    },
+    "sample_counts": {
+      "passed": true,
+      "value": [
+        29,
+        30
+      ]
+    },
+    "domain_forward_validity": {
+      "passed": true,
+      "value": 0.2651
+    },
+    "anchor_Vcem_fraction": {
+      "passed": true,
+      "value": 0.012546045825196
+    },
+    "anchor_Cn": {
+      "passed": true,
+      "value": 5.436001877454284
+    },
+    "anchor_beta_raw_projection": {
+      "passed": true,
+      "value": 20.27156040962707
+    },
+    "anchor_beta_raw_eigen": {
+      "passed": true,
+      "value": 20.27411784946276
+    },
+    "anchor_beta_adjusted_projection": {
+      "passed": true,
+      "value": 19.96176563612143
+    },
+    "anchor_beta_adjusted_eigen": {
+      "passed": true,
+      "value": 19.98935150814289
+    },
+    "anchor_raw_lambda_min": {
+      "passed": true,
+      "value": 0.0090359351386624
+    },
+    "anchor_adjusted_lambda_min": {
+      "passed": true,
+      "value": 0.003498495204923
+    },
+    "bulk_decomposition_identity": {
+      "passed": true,
+      "value": 5.684341886080802e-14
+    },
+    "shear_decomposition_identity": {
+      "passed": true,
+      "value": 5.684341886080802e-14
+    },
+    "Vs_equals_Gd_slope": {
+      "passed": true,
+      "value": 1.1329861848707878e-07
+    },
+    "density_has_zero_target_sensitivity": {
+      "passed": true,
+      "value": 0.0
+    },
+    "density_leaves_raw_information_unchanged": {
+      "passed": true,
+      "value": 0.0
+    },
+    "density_can_constrain_nuisances": {
+      "passed": true,
+      "value": 2.0410903161200127e-05
+    },
+    "target_step_stability": {
+      "passed": true,
+      "value": [
+        20.274117767962295,
+        20.274117849750713,
+        20.27411817725141
+      ]
+    },
+    "Gadj_positive_semidefinite": {
+      "passed": true,
+      "value": [
+        0.003498495204375951,
+        8.225104926031015
+      ]
+    },
+    "schur_information_loss_positive_semidefinite": {
+      "passed": true,
+      "value": [
+        0.005176273022023281,
+        229.008056190174
+      ]
+    },
+    "endpoint_beta_K_analytic": {
+      "passed": true,
+      "value": [
+        24.514554755446785,
+        24.514554704964876
+      ]
+    },
+    "endpoint_beta_G_analytic": {
+      "passed": true,
+      "value": [
+        24.002142806808745,
+        24.00214275601616
+      ]
+    },
+    "scheme1_dloga_dlnVcem": {
+      "passed": true,
+      "value": 0.24999999999053554
+    },
+    "scheme1_dloga_dlnCn": {
+      "passed": true,
+      "value": -0.2500000000071889
+    },
+    "finite_parameter_grid": {
+      "passed": true,
+      "value": [
+        99,
+        38
+      ]
+    },
+    "finite_phi_grid": {
+      "passed": true,
+      "value": [
+        225,
+        18
+      ]
+    },
+    "nonlinear_profiles_converged": {
+      "passed": true,
+      "value": 18
+    },
+    "candidate_ratios_center_at_unity": {
+      "passed": true,
+      "value": {
+        "local_empirical_coordinate_ratio": 1.0000000030859184,
+        "physics_factored_raw_coordinate_ratio": 1.0000000030859184,
+        "physics_factored_adjusted_coordinate_ratio": 1.0,
+        "physics_linearized_raw_coordinate_ratio": 1.0000000030859184,
+        "physics_linearized_adjusted_coordinate_ratio": 1.0,
+        "a_c_ratio": 0.9999999992285205,
+        "median_Kb_ratio": 1.0000000023600577,
+        "median_Gb_ratio": 1.0000000023717184,
+        "T_ratio": 1.0,
+        "median_Kd_ratio": 1.0000000017133637,
+        "median_Gd_ratio": 1.0000000018099848,
+        "median_Vp_ratio": 1.000000000648424,
+        "median_Vs_ratio": 1.0000000009049923
+      }
+    },
+    "raw_metric_contact_HS_identity": {
+      "passed": true,
+      "value": 20.2715602997244
+    },
+    "adjusted_metric_contact_HS_identity": {
+      "passed": true,
+      "value": 19.961765533133907
+    },
+    "physics_factored_raw_local_slope": {
+      "passed": true,
+      "value": 20.271560299724566
+    },
+    "physics_factored_adjusted_local_slope": {
+      "passed": true,
+      "value": 19.961765533134077
+    },
+    "physics_factored_phib_raw_local_slope": {
+      "passed": true,
+      "value": 20.271560299724566
+    },
+    "physics_factored_phib_adjusted_local_slope": {
+      "passed": true,
+      "value": 19.961765533134077
+    },
+    "physics_factored_raw_global_invariance": {
+      "passed": true,
+      "value": [
+        1.0000000030859184,
+        1.0180332537412629
+      ]
+    },
+    "local_exponential_is_not_global_invariant": {
+      "passed": true,
+      "value": [
+        1.0000000030859184,
+        2.0013624559408103
+      ]
+    },
+    "pooled_coordinate_cross_trajectory_transfer": {
+      "passed": true,
+      "value": {
+        "19A": 1.0117884453755677,
+        "BT2": 0.9959017182663916,
+        "pooled_RPIA": 1.0
+      }
+    },
+    "A_raw_cross_trajectory_stability": {
+      "passed": true,
+      "value": {
+        "19A": 0.2974651402296669,
+        "BT2": 0.3110065454527635,
+        "pooled_RPIA": 0.3026134543411656
+      }
+    },
+    "Gamma_raw_cross_trajectory_stability": {
+      "passed": true,
+      "value": {
+        "19A": 1.4564937653591947,
+        "BT2": 1.5255814032307606,
+        "pooled_RPIA": 1.4911805471801822
+      }
+    },
+    "figure_integrity_Fig_E1_parameter_geometry": {
+      "passed": true,
+      "value": [
+        349581,
+        48340
+      ]
+    },
+    "figure_integrity_Fig_E1_physics_decomposition": {
+      "passed": true,
+      "value": [
+        364507,
+        27515
+      ]
+    },
+    "figure_integrity_Fig_E1_ridge_validation": {
+      "passed": true,
+      "value": [
+        456294,
+        24808
+      ]
+    },
+    "figure_integrity_Fig_E1_candidate_invariance": {
+      "passed": true,
+      "value": [
+        423420,
+        31066
+      ]
+    }
+  }
+}

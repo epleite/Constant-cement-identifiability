@@ -1,0 +1,52 @@
+{
+  "grid": {
+    "uniform_Vcem_points_between_DeltaPhi_2p30_crossings": 41,
+    "exact_pooled_point_added": true,
+    "total_points": 42,
+    "lower_crossing_fraction": 0.0083863298890968,
+    "upper_crossing_fraction": 0.0178782520546708
+  },
+  "all_optimizer_success": true,
+  "all_convex_weight_valid": true,
+  "gain": {
+    "minimum": 394.00981805930707,
+    "q25_uniform_Vcem_grid": 454.53180251042613,
+    "median_uniform_Vcem_grid": 550.2599584081033,
+    "q75_uniform_Vcem_grid": 821.2974811279263,
+    "maximum": 1158.831228572773,
+    "recommended_reporting": "report minimum--maximum and pooled anchor; quantiles depend on the chosen Vcem measure"
+  },
+  "weak_rotation_deg": {
+    "minimum": 15.678443269406301,
+    "maximum": 41.17672904123979
+  },
+  "anchors": [
+    {
+      "label": "lower_DeltaPhi_2p30_crossing",
+      "Vcem_fraction": 0.0083863298890968,
+      "Vcem_percent": 0.83863298890968,
+      "Cn_MAP": 5.94336420317182,
+      "objective_MAP": 2.2999999411911354,
+      "lambda_min_gain": 1158.831228572773,
+      "weak_rotation_deg": 15.678443269406301
+    },
+    {
+      "label": "pooled",
+      "Vcem_fraction": 0.012546045825196089,
+      "Vcem_percent": 1.2546045825196088,
+      "Cn_MAP": 5.436001877454284,
+      "objective_MAP": 0.0,
+      "lambda_min_gain": 633.7761651225896,
+      "weak_rotation_deg": 26.655262911400797
+    },
+    {
+      "label": "upper_DeltaPhi_2p30_crossing",
+      "Vcem_fraction": 0.0178782520546708,
+      "Vcem_percent": 1.78782520546708,
+      "Cn_MAP": 5.157981079780847,
+      "objective_MAP": 2.30000169078938,
+      "lambda_min_gain": 394.00981805930707,
+      "weak_rotation_deg": 41.17672904123979
+    }
+  ]
+}

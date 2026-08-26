@@ -1,0 +1,33 @@
+{
+  "title": "Constant-cement identifiability and experimental design",
+  "upload_type": "software",
+  "description": "Reproducibility archive for discovering, explaining and testing remediation of the cement-volume--coordination-number ambiguity in the constant-cement rock-physics model.",
+  "creators": [
+    {
+      "name": "Leite, Emilson Pereira",
+      "affiliation": "Institute of Geosciences, University of Campinas (UNICAMP)"
+    }
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "rock physics",
+    "constant cement",
+    "identifiability",
+    "nuisance adjustment",
+    "experimental design",
+    "Volve"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://www.equinor.com/energy/data-sharing",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/epleite/rpia-volve-reproducibility",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

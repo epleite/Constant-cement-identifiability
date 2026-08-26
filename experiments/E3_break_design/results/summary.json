@@ -1,0 +1,509 @@
+{
+  "bootstrap_primary": {
+    "expanded_nuisance": {
+      "lambda_min_gain": {
+        "ci95": [
+          3.185714146775114,
+          3.5524196375053845
+        ],
+        "median": 3.3891777172224438
+      },
+      "n_replicates": 400,
+      "spectral_ratio": {
+        "ci95": [
+          0.0005851758978534724,
+          0.000718957596582498
+        ],
+        "median": 0.0006471051701753116
+      },
+      "worst_sd_reduction": {
+        "ci95": [
+          1.7848568645121685,
+          1.8847863636151678
+        ],
+        "median": 1.8409719481535873
+      }
+    },
+    "nuisance": {
+      "lambda_min_gain": {
+        "ci95": [
+          336.09687514831205,
+          435.39809502346486
+        ],
+        "median": 384.84447455049775
+      },
+      "n_replicates": 400,
+      "spectral_ratio": {
+        "ci95": [
+          0.05678846171881497,
+          0.05835569510265791
+        ],
+        "median": 0.05781273904727162
+      },
+      "worst_sd_reduction": {
+        "ci95": [
+          18.33294445546402,
+          20.866194887103127
+        ],
+        "median": 19.617453314531076
+      }
+    },
+    "shared": {
+      "lambda_min_gain": {
+        "ci95": [
+          573.2385261204298,
+          759.052746714041
+        ],
+        "median": 663.3869552487984
+      },
+      "n_replicates": 400,
+      "spectral_ratio": {
+        "ci95": [
+          0.07935799924359656,
+          0.08470949107574943
+        ],
+        "median": 0.08238700621387303
+      },
+      "worst_sd_reduction": {
+        "ci95": [
+          23.942400173950414,
+          27.550911722007005
+        ],
+        "median": 25.7562989826506
+      }
+    }
+  },
+  "conditional_design_selection": {
+    "10_samples": {
+      "full_sample_pair_selection_frequency": 1.0,
+      "max_regret_fraction": 0.0,
+      "median_regret_fraction": 0.0,
+      "n": 100
+    },
+    "3_samples": {
+      "full_sample_pair_selection_frequency": 1.0,
+      "max_regret_fraction": 0.0,
+      "median_regret_fraction": 0.0,
+      "n": 100
+    },
+    "5_samples": {
+      "full_sample_pair_selection_frequency": 1.0,
+      "max_regret_fraction": 0.0,
+      "median_regret_fraction": 0.0,
+      "n": 100
+    }
+  },
+  "controls": {
+    "best_multi_fluid_lambda_min_gain": 2.372481809899307,
+    "bounding_weight_stress": {
+      "maximum_fraction_outside_unit_interval": 1.0,
+      "overall_W_G_range": [
+        0.2379081512326708,
+        1.1671257540253575
+      ],
+      "overall_W_K_range": [
+        0.2912352901662592,
+        1.2599601638076503
+      ],
+      "pooled_state_maximum_fraction_outside_unit_interval": 0.0
+    },
+    "patchy_weight_ranges": {
+      "W_G": [
+        0.7601106563730337,
+        0.8030318080463104
+      ],
+      "W_K": [
+        0.832855701485364,
+        0.8810250318998076
+      ]
+    }
+  },
+  "exact_no_go": {
+    "interpretation": "The standard constant-cement equations contain no pressure variable; repeated pressure labels do not create sensitivity diversity.",
+    "max_pressure_induced_change_standard_model": 0.0,
+    "maximum_raw_direction_rotation_deg_under_replication": 0.0
+  },
+  "experiment": "E3 Break: nuisance-adjusted multi-state design",
+  "fabric_link_ablation": {
+    "expanded_nuisance": {
+      "condition_number": 38.62185282106152,
+      "lambda_min": 0.011723938478420237,
+      "lambda_min_gain": 3.3511375010382625,
+      "pressure_1_mpa": 5.0,
+      "pressure_2_mpa": 7.5,
+      "spectral_ratio": 0.0006703996686359264,
+      "worst_sd_reduction": 1.8306112370020737
+    },
+    "fixed": {
+      "condition_number": 4.458477813248795,
+      "lambda_min": 1.4071519786427216,
+      "lambda_min_gain": 402.21635195114254,
+      "pressure_1_mpa": 5.0,
+      "pressure_2_mpa": 7.5,
+      "spectral_ratio": 0.05030681013928961,
+      "worst_sd_reduction": 20.055332257311086
+    },
+    "nuisance": {
+      "condition_number": 4.161276118641997,
+      "lambda_min": 1.2889594036345255,
+      "lambda_min_gain": 368.4325197361159,
+      "pressure_1_mpa": 5.0,
+      "pressure_2_mpa": 7.5,
+      "spectral_ratio": 0.05774932759398574,
+      "worst_sd_reduction": 19.194596107657905
+    },
+    "shared": {
+      "condition_number": 3.488942378575846,
+      "lambda_min": 2.2172628746946654,
+      "lambda_min_gain": 633.7761651279503,
+      "pressure_1_mpa": 5.0,
+      "pressure_2_mpa": 7.5,
+      "spectral_ratio": 0.08215091521360803,
+      "worst_sd_reduction": 25.17491142244497
+    }
+  },
+  "finite_difference": {
+    "max_nuisance_relative_error": 1.7243121395859652e-06,
+    "max_target_relative_error": 6.270264842381283e-07
+  },
+  "limitations": [
+    "The pressure extension is heuristic and prospective; no pressure-dependent observations were available in E1-E2.",
+    "The moving-block bootstrap is conditional on two Hugin trajectories; a separate sensitivity analysis samples representative E2 operating points but is not a full population bootstrap.",
+    "Loading-unloading hysteresis, Biot uncertainty beyond the pressure-calibration nuisance, and higher-order model-form discrepancy require laboratory validation.",
+    "The bounding average is convex at the pooled operating point and its one-sigma local nuisance scenarios, but it leaves the unit-weight interval for part of the wider E2 bootstrap operating-point range; operating-point OED controls are restricted to the convex validity domain."
+  ],
+  "model": {
+    "pressure_extension": "Avseth-Skjei-inspired bounding average",
+    "primary_fabric_mode": "expanded_nuisance",
+    "reference_pressure_mpa": 39.0,
+    "static": "frozen RPIA constant-cement Scheme 1",
+    "status": "prospective heuristic experimental-design model",
+    "stiff_end_member_cement_volume": 0.1
+  },
+  "model_discrepancy_basis_ablation_at_1_percent": {
+    "intercept": {
+      "lambda_min_gain": 13.504063644508964,
+      "n_basis_terms": 1,
+      "spectral_ratio": 0.0027899708616541305,
+      "worst_sd_reduction": 3.6747875645415156
+    },
+    "intercept_plus_porosity": {
+      "lambda_min_gain": 5.169597149585615,
+      "n_basis_terms": 2,
+      "spectral_ratio": 0.001048667801944485,
+      "worst_sd_reduction": 2.2736748117498276
+    },
+    "intercept_plus_porosity_plus_clay": {
+      "lambda_min_gain": 3.3511375010382625,
+      "n_basis_terms": 3,
+      "spectral_ratio": 0.0006703996686359264,
+      "worst_sd_reduction": 1.8306112370020737
+    }
+  },
+  "model_discrepancy_sensitivity": {
+    "0.5_percent": {
+      "lambda_min_gain": 6.842581669691503,
+      "spectral_ratio": 0.0013058964269565244,
+      "worst_sd_reduction": 2.615832882600015
+    },
+    "0_percent": {
+      "lambda_min_gain": 17.220783251925177,
+      "spectral_ratio": 0.0030466414983203087,
+      "worst_sd_reduction": 4.149793157727886
+    },
+    "1_percent": {
+      "lambda_min_gain": 3.3511375010382625,
+      "spectral_ratio": 0.0006703996686359264,
+      "worst_sd_reduction": 1.8306112370020737
+    },
+    "2_percent": {
+      "lambda_min_gain": 1.9629218063815936,
+      "spectral_ratio": 0.00042470575386647613,
+      "worst_sd_reduction": 1.4010431136769466
+    },
+    "5_percent": {
+      "lambda_min_gain": 1.4903196997804684,
+      "spectral_ratio": 0.00040147008817416845,
+      "worst_sd_reduction": 1.2207865086821972
+    }
+  },
+  "nonlinear_profile_widths_at_delta_phi_2p30": {
+    "combined_adjusted_objective": {
+      "Cn_lower_censored": true,
+      "Cn_max": 10.46022651446083,
+      "Cn_min": 4.0,
+      "Cn_upper_censored": false,
+      "Cn_width": 6.46022651446083,
+      "Vcem_lower_censored": true,
+      "Vcem_max_fraction": 0.035,
+      "Vcem_min_fraction": 0.002,
+      "Vcem_upper_censored": true,
+      "Vcem_width_percentage_points": 3.3000000000000003
+    },
+    "static_adjusted_objective": {
+      "Cn_lower_censored": true,
+      "Cn_max": 10.825578869760541,
+      "Cn_min": 4.0,
+      "Cn_upper_censored": false,
+      "Cn_width": 6.825578869760541,
+      "Vcem_lower_censored": true,
+      "Vcem_max_fraction": 0.035,
+      "Vcem_min_fraction": 0.002,
+      "Vcem_upper_censored": true,
+      "Vcem_width_percentage_points": 3.3000000000000003
+    }
+  },
+  "operating_point": {
+    "Cn": 5.436001877454284,
+    "Vcem_fraction": 0.012546045825196089,
+    "baseline_adjusted_lambda_min": 0.003498495204923069,
+    "baseline_adjusted_spectral_ratio": 0.00042534353500283154,
+    "static_local_uncertainty": {
+      "Vcem_lnCn_correlation": -0.9990026773441445,
+      "multiplicative_Cn_one_sigma": 16.664042491156277,
+      "sd_Vcem_fraction": 0.1407915303614465,
+      "sd_Vcem_percentage_points": 14.079153036144652,
+      "sd_lnCn": 2.813253253832777
+    }
+  },
+  "operating_point_design_sensitivity": {
+    "full_sample_pair_selection_frequency": 1.0,
+    "lambda_min_gain_range": [
+      2.7630730335791176,
+      8.695022212378834
+    ],
+    "n_representative_E2_bootstrap_points": 9
+  },
+  "primary_design": {
+    "absolute_state_count": 3,
+    "best_single_state_comparator": {
+      "lambda_min": 0.00902857881619612,
+      "lambda_min_gain": 2.5807034988903625,
+      "pair_over_single_lambda_min_ratio": 1.2985364271715705,
+      "pair_over_single_worst_sd_reduction_ratio": 1.1395334252103229,
+      "pressure_1_mpa": 5.0,
+      "spectral_ratio": 0.0005295751419864186,
+      "worst_sd_reduction": 1.606456815133965
+    },
+    "candidate_pressure_range_mpa": [
+      5.0,
+      60.0
+    ],
+    "condition_number": 38.62185282106152,
+    "full_nuisance_ablation_check": {
+      "lambda_min_gain": 3.3511375010382625,
+      "spectral_ratio": 0.0006703996686359264,
+      "worst_sd_reduction": 1.8306112370020737
+    },
+    "lambda_min": 0.011723938478420237,
+    "lambda_min_gain": 3.3511375010382625,
+    "per_state_log_velocity_sigma": 0.005,
+    "post_design_local_uncertainty": {
+      "Vcem_lnCn_correlation": -0.9984188232644072,
+      "multiplicative_Cn_one_sigma": 4.667710170384358,
+      "sd_Vcem_fraction": 0.07650184646562136,
+      "sd_Vcem_percentage_points": 7.650184646562136,
+      "sd_lnCn": 1.540668623890125
+    },
+    "pressures_mpa": [
+      5.0,
+      7.5
+    ],
+    "shared_reference_error_correlation": 0.5,
+    "spans_full_candidate_range": false,
+    "spectral_ratio": 0.0006703996686359264,
+    "touches_candidate_boundary": true,
+    "trajectory_level_model_discrepancy_basis": [
+      "intercept",
+      "orthonormalized_porosity_trend",
+      "orthonormalized_clay_fraction_trend"
+    ],
+    "trajectory_level_model_discrepancy_sigma": 0.01,
+    "worst_sd_reduction": 1.8306112370020737
+  },
+  "provenance": {
+    "E1_expected_summary_sha256": "9ecc0afdbc5fdcc04910d46597f217af8b1e9d62811774d5ce993066f5b6d55b",
+    "E2_bootstrap_replicates_sha256": "b0f1771418a06824aaee97996f4a6d40d4de4ff2229c15d519979e1a37222d91",
+    "E2_summary_sha256": "d8318e8737cb92ec7b70bf926a2458f960a5b7bfbdb79d130dc4de441d2d4383",
+    "rpia_core_sha256": "b41a6ec9471ffccb03d586cb8c8c1231a937a909e72f3aeb9434b03b2d1ab80a"
+  },
+  "reference_pressure_sensitivity": [
+    {
+      "fabric_mode": "nuisance",
+      "lambda_min_gain": 375.3588452660633,
+      "n_additional_pressures": 1,
+      "pressure_1_mpa": 60.0,
+      "pressure_2_mpa": null,
+      "reference_pressure_mpa": 10.0,
+      "spectral_ratio": 0.06442787357159292,
+      "worst_sd_reduction": 19.374179860475728
+    },
+    {
+      "fabric_mode": "nuisance",
+      "lambda_min_gain": 398.2717080525109,
+      "n_additional_pressures": 2,
+      "pressure_1_mpa": 55.0,
+      "pressure_2_mpa": 60.0,
+      "reference_pressure_mpa": 10.0,
+      "spectral_ratio": 0.06150298296809618,
+      "worst_sd_reduction": 19.95674592844512
+    },
+    {
+      "fabric_mode": "expanded_nuisance",
+      "lambda_min_gain": 2.047269783866808,
+      "n_additional_pressures": 1,
+      "pressure_1_mpa": 60.0,
+      "pressure_2_mpa": null,
+      "reference_pressure_mpa": 10.0,
+      "spectral_ratio": 0.0004278024927479176,
+      "worst_sd_reduction": 1.4308283558368586
+    },
+    {
+      "fabric_mode": "expanded_nuisance",
+      "lambda_min_gain": 2.6763469657308474,
+      "n_additional_pressures": 2,
+      "pressure_1_mpa": 55.0,
+      "pressure_2_mpa": 60.0,
+      "reference_pressure_mpa": 10.0,
+      "spectral_ratio": 0.0005381431565300027,
+      "worst_sd_reduction": 1.6359544509951514
+    },
+    {
+      "fabric_mode": "nuisance",
+      "lambda_min_gain": 325.8257468609409,
+      "n_additional_pressures": 1,
+      "pressure_1_mpa": 60.0,
+      "pressure_2_mpa": null,
+      "reference_pressure_mpa": 20.0,
+      "spectral_ratio": 0.0655011140454216,
+      "worst_sd_reduction": 18.050643945880182
+    },
+    {
+      "fabric_mode": "nuisance",
+      "lambda_min_gain": 361.66968726120547,
+      "n_additional_pressures": 2,
+      "pressure_1_mpa": 5.0,
+      "pressure_2_mpa": 60.0,
+      "reference_pressure_mpa": 20.0,
+      "spectral_ratio": 0.06237270425806885,
+      "worst_sd_reduction": 19.017615183329518
+    },
+    {
+      "fabric_mode": "expanded_nuisance",
+      "lambda_min_gain": 1.5933010165697652,
+      "n_additional_pressures": 1,
+      "pressure_1_mpa": 60.0,
+      "pressure_2_mpa": null,
+      "reference_pressure_mpa": 20.0,
+      "spectral_ratio": 0.0003545028721360028,
+      "worst_sd_reduction": 1.26226028083346
+    },
+    {
+      "fabric_mode": "expanded_nuisance",
+      "lambda_min_gain": 2.2800033599469,
+      "n_additional_pressures": 2,
+      "pressure_1_mpa": 5.0,
+      "pressure_2_mpa": 60.0,
+      "reference_pressure_mpa": 20.0,
+      "spectral_ratio": 0.00047538209142597985,
+      "worst_sd_reduction": 1.5099679996433368
+    },
+    {
+      "fabric_mode": "nuisance",
+      "lambda_min_gain": 352.8358877714115,
+      "n_additional_pressures": 1,
+      "pressure_1_mpa": 5.0,
+      "pressure_2_mpa": null,
+      "reference_pressure_mpa": 39.0,
+      "spectral_ratio": 0.059057048698874445,
+      "worst_sd_reduction": 18.783926314043384
+    },
+    {
+      "fabric_mode": "nuisance",
+      "lambda_min_gain": 368.4325197361159,
+      "n_additional_pressures": 2,
+      "pressure_1_mpa": 5.0,
+      "pressure_2_mpa": 7.5,
+      "reference_pressure_mpa": 39.0,
+      "spectral_ratio": 0.05774932759398574,
+      "worst_sd_reduction": 19.194596107657905
+    },
+    {
+      "fabric_mode": "expanded_nuisance",
+      "lambda_min_gain": 2.5807034988903625,
+      "n_additional_pressures": 1,
+      "pressure_1_mpa": 5.0,
+      "pressure_2_mpa": null,
+      "reference_pressure_mpa": 39.0,
+      "spectral_ratio": 0.0005295751419864186,
+      "worst_sd_reduction": 1.606456815133965
+    },
+    {
+      "fabric_mode": "expanded_nuisance",
+      "lambda_min_gain": 3.3511375010382625,
+      "n_additional_pressures": 2,
+      "pressure_1_mpa": 5.0,
+      "pressure_2_mpa": 7.5,
+      "reference_pressure_mpa": 39.0,
+      "spectral_ratio": 0.0006703996686359264,
+      "worst_sd_reduction": 1.8306112370020737
+    }
+  ],
+  "sample_counts": {
+    "19A": 29,
+    "BT2": 30,
+    "pooled": 59
+  },
+  "scientific_conclusion": "Pressure labels cannot create a constitutively new direction in the frozen constant-cement model. The prospective stress-sensitive extension appears to contract the ridge only while important compliant and stiff fabric variables remain linked to the nominal targets. When compliant-contact Cn, stiff-bound Cn, and compliant critical porosity are all nuisance-adjusted, most of the apparent remediation is absorbed.",
+  "target_aligned_discrepancy_primary": {
+    "0.5_percent": {
+      "lambda_min_gain": 1.6500722009214575,
+      "spectral_ratio": 0.0003376195976780885,
+      "worst_sd_reduction": 1.2845513617296342
+    },
+    "0_percent": {
+      "lambda_min_gain": 3.3511375010382625,
+      "spectral_ratio": 0.0006703996686359264,
+      "worst_sd_reduction": 1.8306112370020737
+    },
+    "1_percent": {
+      "lambda_min_gain": 1.2068996463319068,
+      "spectral_ratio": 0.0002483749145327763,
+      "worst_sd_reduction": 1.0985898444514708
+    },
+    "2_percent": {
+      "lambda_min_gain": 1.057512653103403,
+      "spectral_ratio": 0.00021805471907277007,
+      "worst_sd_reduction": 1.028354342191155
+    },
+    "5_percent": {
+      "lambda_min_gain": 1.0118800376366384,
+      "spectral_ratio": 0.00020876910182079117,
+      "worst_sd_reduction": 1.005922480928147
+    }
+  },
+  "trajectory_specific_primary": [
+    {
+      "Cn": 4.7029523059115945,
+      "Vcem_fraction": 0.024592733574879642,
+      "lambda_min_gain": 2.682478598371325,
+      "n_samples": 29,
+      "pressure_1_mpa": 5.0,
+      "pressure_2_mpa": 7.5,
+      "spectral_ratio": 0.002341636531608564,
+      "trajectory": "19A",
+      "worst_sd_reduction": 1.6378274018868182
+    },
+    {
+      "Cn": 8.292355473009664,
+      "Vcem_fraction": 0.002709648210837285,
+      "lambda_min_gain": 3.0105142154348035,
+      "n_samples": 30,
+      "pressure_1_mpa": 5.0,
+      "pressure_2_mpa": 7.5,
+      "spectral_ratio": 2.2618566426355923e-06,
+      "trajectory": "BT2",
+      "worst_sd_reduction": 1.7350833453856918
+    }
+  ]
+}

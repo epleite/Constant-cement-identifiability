@@ -1,0 +1,9 @@
+component,status,m,dimensionless_contact_coefficient,beta_contribution_per_fraction
+bulk_endpoint_mK,exact endpoint derivative; median across samples,0.9408686585011711,0.3075607267127635,24.514554704964702
+shear_endpoint_mG,exact endpoint derivative; median across samples,0.9257538416482655,0.30113198291987486,24.00214275601598
+observable_weighted_contact_raw,exact local chain rule in stated data metric,,0.3026134543411656,24.120225492356344
+HS_porosity_path_raw,exact local chain rule in stated data metric,,1.4911805471801822,-3.848665192631949
+complete_observable_coordinate_raw,sum of contact and HS-path projections,,,20.271560299724396
+observable_weighted_contact_adjusted,exact local chain rule in stated data metric,,0.3028371625535019,24.138056465991642
+HS_porosity_path_adjusted,exact local chain rule in stated data metric,,1.61812043572011,-4.176290932857735
+complete_observable_coordinate_adjusted,sum of contact and HS-path projections,,,19.961765533133907

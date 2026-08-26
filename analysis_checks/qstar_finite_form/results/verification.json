@@ -1,0 +1,58 @@
+{
+  "n_checks": 13,
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "400 primary bootstrap replicates",
+      "passed": true
+    },
+    {
+      "check": "all finite alternatives have the matched training-point tangent",
+      "passed": true
+    },
+    {
+      "check": "raw analytic contact/HS decomposition identity",
+      "passed": true
+    },
+    {
+      "check": "adjusted analytic contact/HS decomposition identity",
+      "passed": true
+    },
+    {
+      "check": "bootstrap A_raw recomputation",
+      "passed": true
+    },
+    {
+      "check": "bootstrap Gamma_raw recomputation",
+      "passed": true
+    },
+    {
+      "check": "bootstrap A_adjusted recomputation",
+      "passed": true
+    },
+    {
+      "check": "bootstrap Gamma_adjusted recomputation",
+      "passed": true
+    },
+    {
+      "check": "all pooled coordinates pass through the reference point",
+      "passed": true
+    },
+    {
+      "check": "Fig_Q1_finite_coordinate_robustness.png exists",
+      "passed": true
+    },
+    {
+      "check": "Fig_Q1_finite_coordinate_robustness.pdf exists",
+      "passed": true
+    },
+    {
+      "check": "Fig_Q2_endpoint_slope_closure.png exists",
+      "passed": true
+    },
+    {
+      "check": "Fig_Q2_endpoint_slope_closure.pdf exists",
+      "passed": true
+    }
+  ]
+}

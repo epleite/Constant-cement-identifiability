@@ -1,0 +1,538 @@
+{
+  "status": "PASS",
+  "n_checks": 106,
+  "n_passed": 106,
+  "n_failed": 0,
+  "checks": [
+    {
+      "name": "analytic whitening target Gram",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "analytic whitening target-nuisance cross product",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "analytic whitening nuisance Gram",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Schur-Woodbury equivalence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "sample count 19A",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "sample count BT2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "pooled sample count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E1 Vcem anchor",
+      "passed": true,
+      "detail": "0.012546045825196089"
+    },
+    {
+      "name": "E1 Cn anchor",
+      "passed": true,
+      "detail": "5.436001877454284"
+    },
+    {
+      "name": "E1 adjusted lambda-min anchor",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E1 A anchor",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E1 Gamma anchor",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "provenance hash E1_expected_summary_sha256",
+      "passed": true,
+      "detail": "9ecc0afdbc5fdcc04910d46597f217af8b1e9d62811774d5ce993066f5b6d55b"
+    },
+    {
+      "name": "provenance hash E2_summary_sha256",
+      "passed": true,
+      "detail": "d8318e8737cb92ec7b70bf926a2458f960a5b7bfbdb79d130dc4de441d2d4383"
+    },
+    {
+      "name": "provenance hash E2_bootstrap_replicates_sha256",
+      "passed": true,
+      "detail": "b0f1771418a06824aaee97996f4a6d40d4de4ff2229c15d519979e1a37222d91"
+    },
+    {
+      "name": "provenance hash rpia_core_sha256",
+      "passed": true,
+      "detail": "b41a6ec9471ffccb03d586cb8c8c1231a937a909e72f3aeb9434b03b2d1ab80a"
+    },
+    {
+      "name": "pressure extension recovers frozen model at P0",
+      "passed": true,
+      "detail": "0.0"
+    },
+    {
+      "name": "frozen pressure audit is exactly zero",
+      "passed": true,
+      "detail": "0.0"
+    },
+    {
+      "name": "summary frozen no-go matches audit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no-go adds no raw direction",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no-go target rank stays two",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no-go flag stays zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "frozen Vp curve is flat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "frozen Vs curve is flat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "pressure curve is anchored at the RPIA pressure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "pressure extension is non-flat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "bulk bounding weights are physical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shear bounding weights are physical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "bounding-weight stress metrics are finite",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "design grid has finite metrics",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "all adjusted eigenvalues are positive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "pressure pairs are strictly ordered",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E-optimal primary pair is 5 and 7.5 MPa",
+      "passed": true,
+      "detail": "(5.0, 7.5)"
+    },
+    {
+      "name": "summary pair matches direct grid optimum",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "summary lambda-min matches design grid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "summary gain matches design grid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary gain exceeds one",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary spectral ratio remains below one",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "summary JSON contains no non-standard NaN tokens",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "selected pair touches candidate boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "selected pair does not span full candidate range",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "full discrepancy gain decreases monotonically",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "porosity discrepancy does not increase gain",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "clay discrepancy does not increase gain",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary gain remains positive at 5% discrepancy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "independent soft fabric is more conservative than shared",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "independent soft fabric is more conservative than fixed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "expanded fabric adjustment is most conservative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "expanded fabric gain remains modest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reference-pressure control has 12 rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reference-pressure gains are finite",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "target-aligned discrepancy reduces apparent gain",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "one-percent target-aligned spectral ratio is below static baseline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "trajectory-specific control has four rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "trajectory-specific primary gains are finite",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "multi-fluid control is weak",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "q-star proxy adds essentially no weak direction",
+      "passed": true,
+      "detail": "1.0005847864834794"
+    },
+    {
+      "name": "pressure-response proxy exceeds q-star proxy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "target finite differences are stable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "nuisance finite differences are stable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "bootstrap row count",
+      "passed": true,
+      "detail": "2400"
+    },
+    {
+      "name": "bootstrap has 400 unique replicates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "bootstrap metrics are finite",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "bootstrap median matches summary",
+      "passed": true,
+      "detail": "3.3891777172224438"
+    },
+    {
+      "name": "all primary bootstrap gains exceed one",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "conditional design selection row count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "conditional design regrets are non-negative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "nine operating-point controls",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "operating-point design gains are finite",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "pressure does not widen Vcem profile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "pressure does not widen Cn profile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "combined Vcem profile is boundary-censored",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "combined Cn profile is lower-bound censored",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "four PNG figures exist",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "valid PNG Fig_E3_no_go_and_controls.png",
+      "passed": true,
+      "detail": "447101"
+    },
+    {
+      "name": "valid PNG Fig_E3_pressure_design.png",
+      "passed": true,
+      "detail": "520628"
+    },
+    {
+      "name": "valid PNG Fig_E3_ridge_breaking.png",
+      "passed": true,
+      "detail": "686224"
+    },
+    {
+      "name": "valid PNG Fig_E3_robustness_and_direction.png",
+      "passed": true,
+      "detail": "285964"
+    },
+    {
+      "name": "four PDF figures exist",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "valid PDF header Fig_E3_no_go_and_controls.pdf",
+      "passed": true,
+      "detail": "b'%PDF-'"
+    },
+    {
+      "name": "valid PDF header Fig_E3_pressure_design.pdf",
+      "passed": true,
+      "detail": "b'%PDF-'"
+    },
+    {
+      "name": "valid PDF header Fig_E3_ridge_breaking.pdf",
+      "passed": true,
+      "detail": "b'%PDF-'"
+    },
+    {
+      "name": "valid PDF header Fig_E3_robustness_and_direction.pdf",
+      "passed": true,
+      "detail": "b'%PDF-'"
+    },
+    {
+      "name": "all expected CSV tables exist",
+      "passed": true,
+      "detail": "22"
+    },
+    {
+      "name": "no infinities in E3_best_designs.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_bootstrap_replicates.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_bootstrap_summary.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_bounding_weight_stress.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_candidate_observations.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_conditional_design_selection.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_finite_difference_stability.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_model_discrepancy_sensitivity.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_multi_fluid_control.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_no_go_repetition.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_nonlinear_profiles.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_operating_point_design_sensitivity.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_patchy_weights.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_pressure_ablation.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_pressure_curves.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_pressure_design_grid.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_pressure_independence_audit.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_profile_widths.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_rank_one_design_map.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_reference_pressure_sensitivity.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_target_aligned_discrepancy.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no infinities in E3_trajectory_specific_designs.csv",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

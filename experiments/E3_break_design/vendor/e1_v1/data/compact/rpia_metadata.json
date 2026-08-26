@@ -1,0 +1,18 @@
+{
+  "source_note": "Compact trajectory inputs derived from the public Volve dataset. The Hugin intervals were inherited from the previously prepared public benchmark.",
+  "hugin_intervals_m": {
+    "19A": [
+      3033.9554192758487,
+      3152.379704590036
+    ],
+    "BT2": [
+      3153.9039509004597,
+      3295.829657180306
+    ]
+  },
+  "selection": {
+    "phi_min": 0.08,
+    "phi_max": 0.3,
+    "vsh_max": 0.3
+  }
+}

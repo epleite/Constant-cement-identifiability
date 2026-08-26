@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software and data package, please cite the archived release and the associated paper."
+title: "Constant-cement identifiability and experimental design"
+type: software
+version: 1.0.0
+date-released: 2026-08-25
+authors:
+  - family-names: Leite
+    given-names: Emilson Pereira
+    email: emilson@unicamp.br
+    affiliation: "Institute of Geosciences, University of Campinas (UNICAMP)"
+repository-code: "https://github.com/epleite/constant-cement-identifiability"
+license: MIT
+keywords:
+  - rock physics
+  - constant cement
+  - identifiability
+  - nuisance parameters
+  - experimental design
+  - Volve

@@ -1,0 +1,334 @@
+{
+  "method": {
+    "independent_starts_on_high_risk_subset": [
+      "zero_nuisance_local_lnCn",
+      "pooled_zero",
+      "deterministic_plus",
+      "deterministic_minus"
+    ],
+    "controlled_optimizer_diff_step": 0.0001,
+    "dense_shared_crossings": "Brent root with two-start nonlinear nuisance profiling at every evaluation",
+    "stored_refinement_all_points_in_audited_domain": true,
+    "reverse_continuation_both_directions_all_points_in_audited_domain": true,
+    "audited_domain": "all 32 points for static/expanded/aligned; all 19 shared-fabric points through Vcem=0.034433 inside the convex validity domain"
+  },
+  "profiles": {
+    "static": {
+      "points": 32,
+      "total_runs": 168,
+      "independent_or_reverse_runs": 104,
+      "all_new_runs_success": true,
+      "maximum_objective_improvement": 0.0002070071831397624,
+      "median_objective_improvement": 2.9949785668934026e-06,
+      "maximum_absolute_Cn_shift": 0.010138820212818977,
+      "best_strategy_counts": {
+        "reverse_high_to_low": 19,
+        "stored_refined": 6,
+        "stored_original": 4,
+        "reverse_low_to_high": 2,
+        "deterministic_minus": 1
+      },
+      "width_comparison": {
+        "2.3": {
+          "stored_coarse": {
+            "threshold": 2.3,
+            "Vcem_lower_fraction": 0.001,
+            "Vcem_upper_fraction": 0.06,
+            "Vcem_width_percentage_points": 5.8999999999999995,
+            "lower_censored": true,
+            "upper_censored": true
+          },
+          "multistart_coarse": {
+            "threshold": 2.3,
+            "Vcem_lower_fraction": 0.001,
+            "Vcem_upper_fraction": 0.06,
+            "Vcem_width_percentage_points": 5.8999999999999995,
+            "lower_censored": true,
+            "upper_censored": true,
+            "MAP_Cn_min": 4.205201142950845,
+            "MAP_Cn_max": 11.357107377024528,
+            "MAP_Cn_span": 7.151906234073683,
+            "grid_points": 32
+          }
+        },
+        "5.99": {
+          "stored_coarse": {
+            "threshold": 5.99,
+            "Vcem_lower_fraction": 0.001,
+            "Vcem_upper_fraction": 0.06,
+            "Vcem_width_percentage_points": 5.8999999999999995,
+            "lower_censored": true,
+            "upper_censored": true
+          },
+          "multistart_coarse": {
+            "threshold": 5.99,
+            "Vcem_lower_fraction": 0.001,
+            "Vcem_upper_fraction": 0.06,
+            "Vcem_width_percentage_points": 5.8999999999999995,
+            "lower_censored": true,
+            "upper_censored": true,
+            "MAP_Cn_min": 4.205201142950845,
+            "MAP_Cn_max": 11.357107377024528,
+            "MAP_Cn_span": 7.151906234073683,
+            "grid_points": 32
+          }
+        }
+      }
+    },
+    "shared_generic": {
+      "points": 19,
+      "total_runs": 190,
+      "independent_or_reverse_runs": 152,
+      "all_new_runs_success": true,
+      "maximum_objective_improvement": 3.971644702005506e-08,
+      "median_objective_improvement": 5.909317479790843e-11,
+      "maximum_absolute_Cn_shift": 1.7187144736752202e-05,
+      "best_strategy_counts": {
+        "stored_refined": 8,
+        "reverse_low_to_high": 5,
+        "stored_original": 4,
+        "deterministic_plus": 2
+      },
+      "width_comparison": {
+        "2.3": {
+          "stored_coarse": {
+            "threshold": 2.3,
+            "Vcem_lower_fraction": 0.00850101164520187,
+            "Vcem_upper_fraction": 0.017810091117402706,
+            "Vcem_width_percentage_points": 0.9309079472200835,
+            "lower_censored": false,
+            "upper_censored": false
+          },
+          "multistart_coarse": {
+            "threshold": 2.3,
+            "Vcem_lower_fraction": 0.00850101164520187,
+            "Vcem_upper_fraction": 0.01781009111783088,
+            "Vcem_width_percentage_points": 0.930907947262901,
+            "lower_censored": false,
+            "upper_censored": false,
+            "MAP_Cn_min": 5.201852938346618,
+            "MAP_Cn_max": 5.866970927135302,
+            "MAP_Cn_span": 0.6651179887886842,
+            "grid_points": 6
+          }
+        },
+        "5.99": {
+          "stored_coarse": {
+            "threshold": 5.99,
+            "Vcem_lower_fraction": 0.006467384144527889,
+            "Vcem_upper_fraction": 0.02163966850983001,
+            "Vcem_width_percentage_points": 1.517228436530212,
+            "lower_censored": false,
+            "upper_censored": false
+          },
+          "multistart_coarse": {
+            "threshold": 5.99,
+            "Vcem_lower_fraction": 0.0064673841445277115,
+            "Vcem_upper_fraction": 0.021639668515808487,
+            "Vcem_width_percentage_points": 1.5172284371280775,
+            "lower_censored": false,
+            "upper_censored": false,
+            "MAP_Cn_min": 5.07755994354461,
+            "MAP_Cn_max": 6.227489648193561,
+            "MAP_Cn_span": 1.149929704648951,
+            "grid_points": 9
+          }
+        }
+      }
+    },
+    "expanded_generic": {
+      "points": 32,
+      "total_runs": 168,
+      "independent_or_reverse_runs": 104,
+      "all_new_runs_success": true,
+      "maximum_objective_improvement": 0.0007973499142914509,
+      "median_objective_improvement": 1.2264619008679062e-05,
+      "maximum_absolute_Cn_shift": 0.01009448671605373,
+      "best_strategy_counts": {
+        "stored_refined": 15,
+        "reverse_high_to_low": 12,
+        "stored_original": 3,
+        "zero_nuisance_local_lnCn": 1,
+        "pooled_zero": 1
+      },
+      "width_comparison": {
+        "2.3": {
+          "stored_coarse": {
+            "threshold": 2.3,
+            "Vcem_lower_fraction": 0.001,
+            "Vcem_upper_fraction": 0.06,
+            "Vcem_width_percentage_points": 5.8999999999999995,
+            "lower_censored": true,
+            "upper_censored": true
+          },
+          "multistart_coarse": {
+            "threshold": 2.3,
+            "Vcem_lower_fraction": 0.001,
+            "Vcem_upper_fraction": 0.06,
+            "Vcem_width_percentage_points": 5.8999999999999995,
+            "lower_censored": true,
+            "upper_censored": true,
+            "MAP_Cn_min": 4.17839521105334,
+            "MAP_Cn_max": 11.3753955079743,
+            "MAP_Cn_span": 7.19700029692096,
+            "grid_points": 32
+          }
+        },
+        "5.99": {
+          "stored_coarse": {
+            "threshold": 5.99,
+            "Vcem_lower_fraction": 0.001,
+            "Vcem_upper_fraction": 0.06,
+            "Vcem_width_percentage_points": 5.8999999999999995,
+            "lower_censored": true,
+            "upper_censored": true
+          },
+          "multistart_coarse": {
+            "threshold": 5.99,
+            "Vcem_lower_fraction": 0.001,
+            "Vcem_upper_fraction": 0.06,
+            "Vcem_width_percentage_points": 5.8999999999999995,
+            "lower_censored": true,
+            "upper_censored": true,
+            "MAP_Cn_min": 4.17839521105334,
+            "MAP_Cn_max": 11.3753955079743,
+            "MAP_Cn_span": 7.19700029692096,
+            "grid_points": 32
+          }
+        }
+      }
+    },
+    "expanded_target_aligned": {
+      "points": 32,
+      "total_runs": 172,
+      "independent_or_reverse_runs": 108,
+      "all_new_runs_success": true,
+      "maximum_objective_improvement": 0.0003103946424620266,
+      "median_objective_improvement": 2.0948495704341957e-06,
+      "maximum_absolute_Cn_shift": 0.007968178464181186,
+      "best_strategy_counts": {
+        "stored_refined": 15,
+        "reverse_high_to_low": 10,
+        "stored_original": 3,
+        "reverse_low_to_high": 2,
+        "zero_nuisance_local_lnCn": 1,
+        "deterministic_minus": 1
+      },
+      "width_comparison": {
+        "2.3": {
+          "stored_coarse": {
+            "threshold": 2.3,
+            "Vcem_lower_fraction": 0.001,
+            "Vcem_upper_fraction": 0.06,
+            "Vcem_width_percentage_points": 5.8999999999999995,
+            "lower_censored": true,
+            "upper_censored": true
+          },
+          "multistart_coarse": {
+            "threshold": 2.3,
+            "Vcem_lower_fraction": 0.001,
+            "Vcem_upper_fraction": 0.06,
+            "Vcem_width_percentage_points": 5.8999999999999995,
+            "lower_censored": true,
+            "upper_censored": true,
+            "MAP_Cn_min": 4.202799039108058,
+            "MAP_Cn_max": 11.354025056904902,
+            "MAP_Cn_span": 7.151226017796844,
+            "grid_points": 32
+          }
+        },
+        "5.99": {
+          "stored_coarse": {
+            "threshold": 5.99,
+            "Vcem_lower_fraction": 0.001,
+            "Vcem_upper_fraction": 0.06,
+            "Vcem_width_percentage_points": 5.8999999999999995,
+            "lower_censored": true,
+            "upper_censored": true
+          },
+          "multistart_coarse": {
+            "threshold": 5.99,
+            "Vcem_lower_fraction": 0.001,
+            "Vcem_upper_fraction": 0.06,
+            "Vcem_width_percentage_points": 5.8999999999999995,
+            "lower_censored": true,
+            "upper_censored": true,
+            "MAP_Cn_min": 4.202799039108058,
+            "MAP_Cn_max": 11.354025056904902,
+            "MAP_Cn_span": 7.151226017796844,
+            "grid_points": 32
+          }
+        }
+      }
+    }
+  },
+  "shared_dense_widths": [
+    {
+      "threshold": 2.3,
+      "Vcem_lower_fraction": 0.00838632988909683,
+      "Vcem_upper_fraction": 0.01787825205467085,
+      "Vcem_width_percentage_points": 0.9491922165574018,
+      "lower_censored": false,
+      "upper_censored": false
+    },
+    {
+      "threshold": 5.99,
+      "Vcem_lower_fraction": 0.006354285065167894,
+      "Vcem_upper_fraction": 0.02167591467226994,
+      "Vcem_width_percentage_points": 1.5321629607102045,
+      "lower_censored": false,
+      "upper_censored": false
+    }
+  ],
+  "shared_dense_crossings": [
+    {
+      "threshold": 2.3,
+      "side": "lower",
+      "Vcem_fraction": 0.00838632988909683,
+      "Vcem_percent": 0.8386329889096831,
+      "objective": 2.2999999411911354,
+      "lnCn_MAP": 1.7822753372212383,
+      "Cn_MAP": 5.94336420317182,
+      "root_residual": -5.8808864444870323e-08,
+      "coarse_bracket_min_fraction": 0.0068999999999999,
+      "coarse_bracket_max_fraction": 0.0088666666666666
+    },
+    {
+      "threshold": 2.3,
+      "side": "upper",
+      "Vcem_fraction": 0.01787825205467085,
+      "Vcem_percent": 1.787825205467085,
+      "objective": 2.30000169077207,
+      "lnCn_MAP": 1.6405452664095066,
+      "Cn_MAP": 5.1579812195001145,
+      "root_residual": 1.6907720703507323e-06,
+      "coarse_bracket_min_fraction": 0.0167333333333333,
+      "coarse_bracket_max_fraction": 0.0186999999999999
+    },
+    {
+      "threshold": 5.99,
+      "side": "lower",
+      "Vcem_fraction": 0.006354285065167894,
+      "Vcem_percent": 0.6354285065167894,
+      "objective": 5.989999953250458,
+      "lnCn_MAP": 1.8493352285968385,
+      "Cn_MAP": 6.355593101411555,
+      "root_residual": -4.67495420153341e-08,
+      "coarse_bracket_min_fraction": 0.0049333333333333,
+      "coarse_bracket_max_fraction": 0.0068999999999999
+    },
+    {
+      "threshold": 5.99,
+      "side": "upper",
+      "Vcem_fraction": 0.02167591467226994,
+      "Vcem_percent": 2.167591467226994,
+      "objective": 5.98999981305815,
+      "lnCn_MAP": 1.6206685821310802,
+      "Cn_MAP": 5.056469852078896,
+      "root_residual": -1.8694185044410006e-07,
+      "coarse_bracket_min_fraction": 0.0206666666666666,
+      "coarse_bracket_max_fraction": 0.0226333333333333
+    }
+  ],
+  "run_count": 698
+}

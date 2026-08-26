@@ -1,0 +1,121 @@
+% Candidate text only. This file does not modify main.tex.
+
+\subsection{Robustness of the finite continuation}
+
+The local differential structure does not uniquely determine a finite
+coordinate.  We therefore embedded equation~(14) in the matched-tangent
+power family
+\begin{equation}
+ g_r(x;x_0)=
+ \begin{cases}
+ [(x/x_0)^r-1]/r, & r\ne0,\\
+ \ln(x/x_0), & r=0,
+ \end{cases}
+ \qquad
+ q_{r,s}=\ln\frac{C_n}{C_n^0}
+ +A g_r(V_{\rm cem};V_0)
+ +\Gamma g_s(\phi_b;\phi_b^0).
+\end{equation}
+Every member has the same value and the same first derivative
+$A/V_0-\Gamma/\phi_b^0$ at the reference point.  The alternatives were
+evaluated with the same $A$ and $\Gamma$, observations, weights and ridge
+points; no coefficient was refitted to the held-out trajectory.  We also
+integrated the local profile slope
+\begin{equation}
+ \frac{d\ln C_n}{dV_{\rm cem}}
+ =-\frac{s_{\ell}^{\mathsf T}P s_V}
+         {s_{\ell}^{\mathsf T}P s_{\ell}},
+\end{equation}
+recomputing the metric along the path.  This numerical curve is a
+differential reference rather than a same-complexity two-coefficient model.
+
+\begin{table}
+\centering
+\caption{Matched-tangent finite-coordinate audit.  Pooled drift is the
+maximum absolute coordinate-ratio error on the complete raw structural
+ridge.  Level error is the worst absolute leave-one-trajectory-out error
+over both directions and raw/adjusted metrics.  Shape RMS is averaged over
+the four held-out cases between the two operating points.}
+\begin{tabular}{lrrr}
+\toprule
+Continuation & Pooled drift (\%) & LOTO level (\%) & Shape RMS in $\ln C_n$\\
+\midrule
+log contact + log HS (selected) & 1.80 & 3.29 & 0.00948\\
+log contact + linear HS         & 2.17 & 3.54 & 0.0112\\
+log contact + reciprocal HS     & 1.74 & 3.03 & 0.00776\\
+linear contact + log HS         & 97.4 & 541  & 0.748\\
+first-order local tangent       & 99.9 & 543  & 0.750\\
+integrated local projection     & 0.0011 & 2.43 & 0.00210\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The result supports a strongly curved, approximately logarithmic contact
+continuation and rejects extension of the local tangent over the observed
+parameter separation.  It does not uniquely select the finite HS factor:
+linear and reciprocal HS continuations perform comparably because the HS
+term is smaller and $\phi_b$ varies over a restricted relative range.  We
+therefore interpret equation~(14) as a stable, low-order physics-factored
+coordinate, not as the unique finite state compatible with the local
+Jacobian.
+
+\section{Analytic--numerical self-consistency of the local slope}
+
+For either endpoint modulus, write
+$m=\partial\ln S/\partial\ln a_c$.  Scheme~1 gives
+\begin{equation}
+ d\ln K_b=\left(1-\frac{m_K}{4}\right)d\ln C_n
+          +\frac{m_K}{4}d\ln V_{\rm cem},
+ \qquad
+ A_K=\frac{m_K}{4-m_K},
+ \qquad
+ \beta_K=\frac{A_K}{V_0}.
+\end{equation}
+The shear endpoint has the same form with the effective exponent
+$m_G=\partial\ln G_b/\partial\ln a_c$, including its normal and tangential
+terms.  At the pooled point, the sample-median exponents are
+$m_K=0.940869$ and $m_G=0.925754$, which give
+$\beta_K=24.515$ and $\beta_G=24.002$.  Within Scheme~1, these endpoint
+values provide a contact-only benchmark for the observable coordinate;
+they are neither an independent prediction of its complete slope nor a
+validation against external contact measurements.
+
+To propagate the result to the data, let $u_a$, $u_C$ and $u_b$ denote the
+derivatives of the stacked elastic observations with respect to
+$\ln a_c$, $\ln C_n$ at fixed $a_c$, and $\phi_b$, respectively, after
+division by the data standard deviations.  The target column for
+$\ln C_n$ is
+\begin{equation}
+ j_\ell=u_C-\frac14u_a.
+\end{equation}
+With $P=I$ for the raw metric and
+$P=I-J_\eta(J_\eta^{\mathsf T}J_\eta+I)^{-1}J_\eta^{\mathsf T}$ after
+nuisance adjustment, the two finite-coordinate coefficients are
+\begin{align}
+ A &=
+ \frac{j_\ell^{\mathsf T}P(u_a/4)}
+      {j_\ell^{\mathsf T}Pj_\ell},\\
+ \Gamma &=
+ \phi_b\frac{j_\ell^{\mathsf T}Pu_b}
+               {j_\ell^{\mathsf T}Pj_\ell},\\
+ \beta &= \frac{A}{V_0}-\frac{\Gamma}{\phi_b}.
+\end{align}
+The raw observable-weighted contact term is 24.120 and the moving-endpoint
+HS contribution is $-3.849$, giving $\beta=20.272$.  Nuisance projection
+changes the two terms to 24.138 and $-4.176$, giving $\beta_{\rm adj}=19.962$.
+Thus, within the same forward model, observable metric and local projection,
+the analytic endpoint decomposition and the directly calculated ridge slope
+are numerically self-consistent once the HS porosity-path contribution is
+included.
+
+Applying the same calculation to all 400 primary 20-m moving-block samples
+recovers the stored coefficients because both routes use the same projected
+local derivatives.  This is an analytic--numerical implementation check, not
+an independent physical prediction.  At the fixed pooled $V_0$, the adjusted
+total has median 20.063 and conditional 2.5--97.5 percentile range
+$[19.136,20.517]$; $A_{\rm adj}$ has median 0.3041 and range
+$[0.2901,0.3114]$, while $\Gamma_{\rm adj}$ has median 1.6207 and range
+$[1.5528,1.6680]$.  With only about six block-length units per trajectory,
+these ranges are conditional diagnostics with uncertain finite-sample
+coverage.  The endpoint exponents constrain the contact contribution
+underlying $A$; $\Gamma$ arises from the moving-porosity/HS derivative.

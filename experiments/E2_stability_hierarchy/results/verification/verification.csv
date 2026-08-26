@@ -1,0 +1,46 @@
+check,passed,detail
+frozen hash: vendor/e1_v1/src/e1_analysis.py,True,c5ada1583b454d05cd38ff28d1dfce73078e27ae2394ce761e9c86b0fc2d331b
+frozen hash: vendor/e1_v1/vendor/rpia_v1/rpia_core.py,True,b41a6ec9471ffccb03d586cb8c8c1231a937a909e72f3aeb9434b03b2d1ab80a
+frozen hash: vendor/e1_v1/data/compact/19A_training_window.csv,True,33dfc5cb97a369542a7856c99f093688276d19b4ddb8d439270786818692d91a
+frozen hash: vendor/e1_v1/data/compact/BT2_training_window.csv,True,db72d040b8bdef03f0c6cf0345038fc722cebc36b6600c35275e800ebc7e6d46
+sample count 19A,True,29
+sample count BT2,True,30
+sample count pooled,True,59
+E1 Vcem anchor 19A,True,0.024592733574879642
+E1 Cn anchor 19A,True,4.7029523059115945
+E1 Vcem anchor BT2,True,0.002709648210837285
+E1 Cn anchor BT2,True,8.292355473009664
+E1 Vcem anchor pooled,True,0.012546045825196089
+E1 Cn anchor pooled,True,5.436001877454284
+factored derivative identity raw,True,"factored=20.2715602997, target=20.2715602997"
+factored derivative identity adjusted,True,"factored=19.9617655331, target=19.9617655331"
+bootstrap requested counts,True,"{'IID': 120, 'MBB_12m': 120, 'MBB_20m_primary': 400, 'MBB_40m': 120}"
+bootstrap all successful,True,{True: 760}
+LOTO bootstrap count,True,600
+LOTO bootstrap all successful,True,{True: 600}
+full mode summary,True,False
+bootstrap critical values finite,True,nonfinite=0
+hierarchical bootstrap constraints nonnegative,True,"min={'hierarchy_qstar_delta': 2.499108205711309e-06, 'hierarchy_Cn_delta': 2.0214973517340693e-07}"
+separate lower bound observed_data/fixed_nuisance,True,"separate=149.530881795, constrained_min=149.62399249"
+shared q equality observed_data/fixed_nuisance,True,2.203098814490545e-16
+shared Cn equality observed_data/fixed_nuisance,True,0.0
+separate lower bound observed_data/nonlinear_MAP,True,"separate=87.4944445511, constrained_min=87.5186828401"
+shared q equality observed_data/nonlinear_MAP,True,3.3306690738754696e-16
+shared Cn equality observed_data/nonlinear_MAP,True,0.0
+separate lower bound local_geometry/local_raw_geometry,True,"separate=0, constrained_min=0.00196527798385"
+shared q equality local_geometry/local_raw_geometry,True,6.704706234650359e-16
+shared Cn equality local_geometry/local_raw_geometry,True,0.0
+separate lower bound local_geometry/local_Schur_geometry,True,"separate=0, constrained_min=0.00129737660791"
+shared q equality local_geometry/local_Schur_geometry,True,3.3393426912553537e-16
+shared Cn equality local_geometry/local_Schur_geometry,True,0.0
+LOTO point qstar closer than local exponential,True,"[{""train"":""19A"",""test"":""BT2"",""adjustment"":""raw"",""qstar_level_ratio"":0.9935845385,""local_exponential_level_ratio"":1.4730789812},{""train"":""19A"",""test"":""BT2"",""adjustment"":""adjusted"",""qstar_level_ratio"":1.0003109123,""local_exponential_level_ratio"":1.4823263918},{""train"":""BT2"",""test"":""19A"",""adjustment"":""raw"",""qstar_level_ratio"":1.0329195078,""local_exponential_level_ratio"":6.4270208027},{""train"":""BT2"",""test"":""19A"",""adjustment"":""adjusted"",""qstar_level_ratio"":1.0296636509,""local_exponential_level_ratio"":6.419268356}]"
+LOTO shape qstar beats local tangent,True,"{""('19A', 'BT2', 'adjusted')"":0.0454989227,""('19A', 'BT2', 'raw')"":0.0390899339,""('BT2', '19A', 'adjusted')"":0.0046401625,""('BT2', '19A', 'raw')"":0.0036570082}"
+all adjusted profiles converged,True,rows=72
+deterministic first primary A_raw,True,"recomputed=0.308184653550269, stored=0.308184653550269"
+deterministic first primary Gamma_adjusted,True,"recomputed=1.63192623195581, stored=1.63192623195581"
+figure exists Fig_E2_bootstrap_stability.png,True,596501
+figure exists Fig_E2_bootstrap_stability.pdf,True,58470
+figure exists Fig_E2_loto_transport.png,True,262312
+figure exists Fig_E2_loto_transport.pdf,True,27407
+figure exists Fig_E2_hierarchical_comparison.png,True,286576
+figure exists Fig_E2_hierarchical_comparison.pdf,True,25546

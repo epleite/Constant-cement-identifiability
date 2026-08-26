@@ -1,0 +1,3 @@
+threshold,Vcem_lower_fraction,Vcem_upper_fraction,Vcem_width_percentage_points,lower_censored,upper_censored
+2.3,0.00838632988909683,0.01787825205467085,0.9491922165574018,False,False
+5.99,0.006354285065167894,0.02167591467226994,1.5321629607102045,False,False

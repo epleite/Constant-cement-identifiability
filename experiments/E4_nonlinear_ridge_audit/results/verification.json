@@ -1,0 +1,117 @@
+{
+  "all_passed": true,
+  "n_checks": 19,
+  "checks": [
+    {
+      "name": "pooled headline gain reproduced: shared_generic",
+      "passed": true,
+      "absolute_relative_error": 8.458345135409218e-12
+    },
+    {
+      "name": "pooled headline gain reproduced: expanded_generic",
+      "passed": true,
+      "absolute_relative_error": 8.441358723132453e-12
+    },
+    {
+      "name": "pooled headline gain reproduced: expanded_target_aligned",
+      "passed": true,
+      "absolute_relative_error": 4.977540601913688e-11
+    },
+    {
+      "name": "static nonlinear profile reproduces E1",
+      "passed": true,
+      "maximum_Cn_absolute_error": 0.0025290186029742756,
+      "maximum_objective_absolute_error": 8.77346578934124e-05,
+      "common_points": 3
+    },
+    {
+      "name": "linear discrepancy profiling identity",
+      "passed": true,
+      "relative_error": 0.0
+    },
+    {
+      "name": "all profile optimizers report success",
+      "passed": true,
+      "failed_count": 0
+    },
+    {
+      "name": "all stored results finite",
+      "passed": true
+    },
+    {
+      "name": "expanded-fabric MAP path remains in convex bounding domain",
+      "passed": true,
+      "invalid_count": 0,
+      "minimum_weight": 0.7524078162879497,
+      "maximum_weight": 0.8851980810269425
+    },
+    {
+      "name": "pointwise gain finite-difference stability",
+      "passed": true,
+      "maximum_relative_error_to_1e-4": 6.380872173306074e-06
+    },
+    {
+      "name": "all multi-start and reverse-path optimizations report success",
+      "passed": true,
+      "run_count": 698
+    },
+    {
+      "name": "multi-start changes remain below interpretation tolerances",
+      "passed": true,
+      "maximum_objective_improvement": 0.0007973499142914509,
+      "maximum_absolute_Cn_shift": 0.010138820212818977
+    },
+    {
+      "name": "shared profile is start-path invariant in convex domain",
+      "passed": true,
+      "maximum_objective_improvement": 3.971644702005506e-08,
+      "maximum_absolute_Cn_shift": 1.7187144736752202e-05
+    },
+    {
+      "name": "adaptive shared crossings satisfy profile thresholds",
+      "passed": true,
+      "maximum_absolute_root_residual": 1.6907720703507325e-06,
+      "DeltaPhi_2p30_width_percentage_points": 0.9491922165574018,
+      "DeltaPhi_5p99_width_percentage_points": 1.5321629607102043
+    },
+    {
+      "name": "adaptive shared widths reproduce dense audit",
+      "passed": true,
+      "DeltaPhi_2p30_width_percentage_points": 0.9491922165574018,
+      "DeltaPhi_5p99_width_percentage_points": 1.5321629607102043
+    },
+    {
+      "name": "refined shared supported path is converged and convex",
+      "passed": true,
+      "points": 42,
+      "minimum_gain": 394.00981805930707,
+      "maximum_gain": 1158.831228572773
+    },
+    {
+      "name": "post-multistart pointwise ranges preserve rounded conclusions",
+      "passed": true,
+      "expanded_minimum": 2.5019995485894717,
+      "expanded_maximum": 4.820270863095899,
+      "aligned_minimum": 1.1863372694385008,
+      "aligned_maximum": 2.531106478595635
+    },
+    {
+      "name": "figure exists: Fig_nonlinear_ridge_robustness.png",
+      "passed": true,
+      "size_bytes": 477097
+    },
+    {
+      "name": "figure exists: Fig_nonlinear_ridge_robustness.pdf",
+      "passed": true,
+      "size_bytes": 31971
+    },
+    {
+      "name": "PNG decodes completely",
+      "passed": true,
+      "pixel_dimensions": [
+        3120,
+        2262
+      ]
+    }
+  ]
+}

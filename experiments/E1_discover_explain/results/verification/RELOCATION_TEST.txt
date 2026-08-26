@@ -1,0 +1,8 @@
+PASS
+
+The package was copied to a fresh temporary directory outside the workspace, then executed with:
+
+python scripts/run_e1.py --quick
+python scripts/verify_e1.py
+
+Both commands completed successfully without access to the parent RPIA source package.

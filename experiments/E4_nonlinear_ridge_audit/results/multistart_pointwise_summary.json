@@ -1,0 +1,18 @@
+{
+  "expanded_generic": {
+    "minimum_gain": 2.5019995485894717,
+    "maximum_gain": 4.820270863095899,
+    "minimum_rotation_deg": 0.0024297944983901103,
+    "maximum_rotation_deg": 0.7645883190192829,
+    "all_convex_weight_valid": true,
+    "n": 32
+  },
+  "expanded_target_aligned": {
+    "minimum_gain": 1.1863372694385008,
+    "maximum_gain": 2.531106478595635,
+    "minimum_rotation_deg": 0.0012157958558080537,
+    "maximum_rotation_deg": 0.16807790835551756,
+    "all_convex_weight_valid": true,
+    "n": 32
+  }
+}

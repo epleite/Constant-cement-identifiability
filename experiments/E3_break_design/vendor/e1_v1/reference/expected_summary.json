@@ -1,0 +1,195 @@
+{
+  "experiment": "E1 Discover-Explain constant-cement geometry",
+  "model": "constant_cement Scheme 1, frozen RPIA v1 forward model",
+  "sample_counts": {
+    "19A": 29,
+    "BT2": 30,
+    "pooled": 59
+  },
+  "selected_phi_range": [
+    0.09453663224,
+    0.2651
+  ],
+  "transfer_discrepancy": {
+    "Vp": 209.15625622198633,
+    "Vs": 149.49481931276287,
+    "rho": 0.015165634110787557
+  },
+  "transfer_aware_sigma": {
+    "Vp": 215.0496210570881,
+    "Vs": 154.7536784743924,
+    "rho": 0.018165804633494303
+  },
+  "pooled_operating_point": {
+    "Vcem_fraction": 0.012546045825196,
+    "Cn": 5.436001877454284,
+    "beta_raw_projection": 20.27156040962707,
+    "beta_raw_eigen": 20.27411784946276,
+    "beta_adjusted_projection": 19.96176563612143,
+    "beta_adjusted_eigen": 19.98935150814289,
+    "beta_Vp_median": 20.069201415306686,
+    "beta_Vs_median": 20.28971845653816,
+    "median_beta_endpoint_K": 24.514554704964706,
+    "median_beta_endpoint_G": 24.002142756015985,
+    "median_beta_total_K": 19.594229983390704,
+    "median_beta_total_G": 20.289718343239542,
+    "median_beta_contact_K": 24.37877207789573,
+    "median_beta_HS_path_K": -4.760419440792373,
+    "median_beta_contact_G": 24.016640305576374,
+    "median_beta_HS_path_G": -3.7354150729702313,
+    "raw_lambda_min": 0.0090359351386624,
+    "adjusted_lambda_min": 0.003498495204923,
+    "adjusted_spectral_ratio": 0.0004253435350028,
+    "adjusted_angular_independence": 0.0019936506592312,
+    "retention_min": 0.0312799093651529
+  },
+  "practical_supported_grid": {
+    "n_cells": 29,
+    "beta_raw_eigen_min": 4.48305307413326,
+    "beta_raw_eigen_median": 12.11984206642197,
+    "beta_raw_eigen_max": 101.14658621057404,
+    "beta_adjusted_eigen_min": 4.173802908134927,
+    "beta_adjusted_eigen_median": 11.82825864510011,
+    "beta_adjusted_eigen_max": 100.91769664295254,
+    "adjusted_spectral_ratio_max": 0.0043844423525936,
+    "adjusted_angular_independence_max": 0.0516094725008098
+  },
+  "full_grid": {
+    "beta_raw_eigen_min": 0.1565953697109951,
+    "beta_raw_eigen_max": 311.21816612664554,
+    "beta_adjusted_eigen_min": -0.1257855129591369,
+    "beta_adjusted_eigen_max": 311.4521291958204,
+    "negative_adjusted_beta_cells": 3
+  },
+  "physics_at_nearest_phi_grid_cell": {
+    "Vcem_fraction": 0.013,
+    "phi": 0.2214285714285714,
+    "beta_endpoint_K": 23.64287845768656,
+    "beta_endpoint_G": 23.14584401935179,
+    "beta_contact_K": 23.50935823113366,
+    "beta_HS_path_K": -4.763630602180875,
+    "beta_total_K": 18.745727628952785,
+    "beta_contact_G": 23.160000562788877,
+    "beta_HS_path_G": -3.728003680811213,
+    "beta_total_G": 19.43199688197766
+  },
+  "density_control": {
+    "raw_lambda_min_VpVs": 0.0090359351386624,
+    "raw_lambda_min_VpVsrho": 0.0090359351386624,
+    "adjusted_lambda_min_VpVs": 0.0034780843017618,
+    "adjusted_lambda_min_VpVsrho": 0.003498495204923,
+    "density_target_jacobian_norm": 0.0
+  },
+  "finite_ridge": {
+    "local_lnCn_rms_raw_profile_vs_20p3": 0.01849841521603811,
+    "local_lnCn_rms_raw_profile_vs_integrated_raw": 0.0005758267893138381,
+    "local_lnCn_rms_profiled_vs_integrated_adjusted": 0.0005769029670574813,
+    "max_profiled_nuisance_prior_norm": 0.2115540305826708,
+    "all_nuisance_profiles_converged": true
+  },
+  "candidate_state_invariance": {
+    "local_empirical_coordinate_ratio": {
+      "min": 1.0000000030859166,
+      "max": 2.0013624559408103
+    },
+    "physics_factored_raw_coordinate_ratio": {
+      "min": 1.0000000030859164,
+      "max": 1.018033253741263
+    },
+    "physics_factored_adjusted_coordinate_ratio": {
+      "min": 0.9999928506645042,
+      "max": 1.0184858333027467
+    },
+    "physics_linearized_raw_coordinate_ratio": {
+      "min": 1.0000000030859166,
+      "max": 1.021681835582201
+    },
+    "physics_linearized_adjusted_coordinate_ratio": {
+      "min": 0.9999931983912997,
+      "max": 1.0192036152524449
+    },
+    "a_c_ratio": {
+      "min": 0.4416530491261078,
+      "max": 1.5818681599317712
+    },
+    "median_Kb_ratio": {
+      "min": 0.9588448114366376,
+      "max": 1.1678304859602322
+    },
+    "median_Gb_ratio": {
+      "min": 0.9692615361647369,
+      "max": 1.1582374967522906
+    },
+    "T_ratio": {
+      "min": 0.9710625417914885,
+      "max": 1.1395704534553057
+    },
+    "median_Kd_ratio": {
+      "min": 0.9756324433837896,
+      "max": 1.0025261243136057
+    },
+    "median_Gd_ratio": {
+      "min": 0.9999912002812142,
+      "max": 1.0020562533660031
+    },
+    "median_Vp_ratio": {
+      "min": 0.9977604522413636,
+      "max": 1.0004254351481183
+    },
+    "median_Vs_ratio": {
+      "min": 0.999995600130928,
+      "max": 1.001027598703454
+    }
+  },
+  "physics_factored_coordinate": {
+    "beta_contact_raw_projection": 24.120225492356344,
+    "beta_HS_path_raw_projection": -3.848665192631949,
+    "beta_total_raw_projection": 20.271560299724396,
+    "A_raw": 0.3026134543411656,
+    "B_raw": 3.848665192631949,
+    "Gamma_raw": 1.4911805471801822,
+    "beta_contact_adjusted_projection": 24.138056465991642,
+    "beta_HS_path_adjusted_projection": -4.176290932857735,
+    "beta_total_adjusted_projection": 19.961765533133907,
+    "A_adjusted": 0.3028371625535019,
+    "B_adjusted": 4.176290932857735,
+    "Gamma_adjusted": 1.61812043572011,
+    "Vcem_reference": 0.012546045825196089,
+    "Cn_reference": 5.436001877454284
+  },
+  "cross_trajectory_coordinate": {
+    "19A": {
+      "beta_raw_projection": 8.215881948447201,
+      "beta_adjusted_projection": 7.929908350198968,
+      "A_raw_local": 0.2974651402339967,
+      "Gamma_raw_local": 1.456493765358404,
+      "A_adjusted_local": 0.296969451551593,
+      "Gamma_adjusted_local": 1.556283660768072,
+      "pooled_physics_coordinate_raw_ratio": 1.0117884453755692,
+      "pooled_physics_coordinate_adjusted_ratio": 1.00789158032011,
+      "pooled_local_20p3_coordinate_ratio": 1.1048332088523536
+    },
+    "BT2": {
+      "beta_raw_projection": 110.93749643206718,
+      "beta_adjusted_projection": 110.88234172240607,
+      "A_raw_local": 0.311006545452364,
+      "Gamma_raw_local": 1.5255814032465265,
+      "A_adjusted_local": 0.31132051197260313,
+      "Gamma_adjusted_local": 1.5935278090322413,
+      "pooled_physics_coordinate_raw_ratio": 0.9959017182663842,
+      "pooled_physics_coordinate_adjusted_ratio": 0.9987336767696068,
+      "pooled_local_20p3_coordinate_ratio": 1.249334925116701
+    },
+    "pooled_RPIA": {
+      "beta_raw_projection": 20.271560299871734,
+      "beta_adjusted_projection": 19.961765533606325,
+      "A_raw_local": 0.3026134543429655,
+      "Gamma_raw_local": 1.491180547178748,
+      "A_adjusted_local": 0.3028371625604069,
+      "Gamma_adjusted_local": 1.6181204357503793,
+      "pooled_physics_coordinate_raw_ratio": 1.0,
+      "pooled_physics_coordinate_adjusted_ratio": 1.0,
+      "pooled_local_20p3_coordinate_ratio": 1.0
+    }
+  }
+}

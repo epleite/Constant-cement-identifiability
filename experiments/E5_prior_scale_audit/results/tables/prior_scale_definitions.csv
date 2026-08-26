@@ -1,0 +1,8 @@
+nuisance,scientific_group,meaning,baseline_sd,unit,physical_interpretation,baseline_one_sigma_multiplicative_factor,baseline_one_sigma_percentage_points,half_scale_sd,double_scale_sd,fourfold_scale_sd
+logP_calibration,stress_calibration,multiplicative pressure-calibration factor,0.1,log ratio,exp(sigma),1.1051709180756477,,0.05,0.2,0.4
+log_stress_bulk_scale,stress_calibration,multiplicative bulk stress-response amplitude,0.25,log ratio,exp(sigma),1.2840254166877414,,0.125,0.5,1.0
+log_stress_shear_scale,stress_calibration,multiplicative shear stress-response amplitude,0.25,log ratio,exp(sigma),1.2840254166877414,,0.125,0.5,1.0
+stiff_cement_volume_shift,scenario_endpoint,stiff-end cement-volume shift,0.015,absolute fraction,100 sigma percentage points,,1.5,0.0075,0.03,0.06
+ln_soft_cn_offset,fabric_state,compliant-contact coordination-number offset,0.2,log ratio,exp(sigma),1.2214027581601699,,0.1,0.4,0.8
+ln_stiff_cn_offset,fabric_state,stiff-bound coordination-number offset,0.1,log ratio,exp(sigma),1.1051709180756477,,0.05,0.2,0.4
+soft_phic_shift,fabric_state,compliant-branch critical-porosity shift,0.02,absolute fraction,100 sigma percentage points,,2.0,0.01,0.04,0.08

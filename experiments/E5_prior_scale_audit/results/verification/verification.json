@@ -1,0 +1,227 @@
+{
+  "passed": true,
+  "n_passed": 44,
+  "n_checks": 44,
+  "checks": [
+    {
+      "check": "group_row_count",
+      "passed": true,
+      "detail": "rows=32"
+    },
+    {
+      "check": "individual_row_count",
+      "passed": true,
+      "detail": "rows=35"
+    },
+    {
+      "check": "design_row_count",
+      "passed": true,
+      "detail": "rows=32"
+    },
+    {
+      "check": "scale_definition_count",
+      "passed": true,
+      "detail": "rows=7"
+    },
+    {
+      "check": "structural_mode_count",
+      "passed": true,
+      "detail": "rows=4"
+    },
+    {
+      "check": "static_group_row_count",
+      "passed": true,
+      "detail": "rows=40"
+    },
+    {
+      "check": "static_individual_row_count",
+      "passed": true,
+      "detail": "rows=45"
+    },
+    {
+      "check": "static_design_row_count",
+      "passed": true,
+      "detail": "rows=40"
+    },
+    {
+      "check": "static_scale_definition_count",
+      "passed": true,
+      "detail": "rows=9"
+    },
+    {
+      "check": "group_metrics_finite",
+      "passed": true,
+      "detail": "columns=['lambda_min', 'lambda_max', 'spectral_ratio', 'lambda_min_gain', 'Vcem_lnCn_correlation', 'aligned_1pct_lambda_min_gain']"
+    },
+    {
+      "check": "positive_information",
+      "passed": true,
+      "detail": "lambda_min range=0.00809171--0.0127717"
+    },
+    {
+      "check": "valid_correlations",
+      "passed": true,
+      "detail": "rho range=-0.999639---0.997411"
+    },
+    {
+      "check": "aligned_discrepancy_never_increases_gain",
+      "passed": true,
+      "detail": "all grouped scenarios"
+    },
+    {
+      "check": "static_group_metrics_finite",
+      "passed": true,
+      "detail": "static and combined geometry columns"
+    },
+    {
+      "check": "static_positive_information",
+      "passed": true,
+      "detail": "static lambda-min range=0.00103563--0.00782493"
+    },
+    {
+      "check": "static_aligned_discrepancy_never_increases_gain",
+      "passed": true,
+      "detail": "all static grouped scenarios"
+    },
+    {
+      "check": "static_weak_directions_normalized",
+      "passed": true,
+      "detail": "max norm error=2.220e-16"
+    },
+    {
+      "check": "aligned_discrepancy_recomputed_with_static_direction",
+      "passed": true,
+      "detail": "weak-direction Vcem-component span=1.983e-02"
+    },
+    {
+      "check": "baseline_gain_reproduced",
+      "passed": true,
+      "detail": "max error=0.000e+00"
+    },
+    {
+      "check": "baseline_spectral_ratio_reproduced",
+      "passed": true,
+      "detail": "max error=2.635e-17"
+    },
+    {
+      "check": "baseline_target_correlation_reproduced",
+      "passed": true,
+      "detail": "max error=0.000e+00"
+    },
+    {
+      "check": "baseline_aligned_gain_reproduced",
+      "passed": true,
+      "detail": "baseline E3 target-aligned control"
+    },
+    {
+      "check": "static_sweep_baseline_reproduced",
+      "passed": true,
+      "detail": "baseline rows=5"
+    },
+    {
+      "check": "design_pair_stable",
+      "passed": true,
+      "detail": "best pair=5+7.5 MPa in all scenarios"
+    },
+    {
+      "check": "static_design_pair_stable",
+      "passed": true,
+      "detail": "best pair=5+7.5 MPa in all static-prior scenarios"
+    },
+    {
+      "check": "best_exceeds_second_best",
+      "passed": true,
+      "detail": "minimum margin=3.329e-04"
+    },
+    {
+      "check": "static_best_exceeds_second_best",
+      "passed": true,
+      "detail": "minimum margin=7.855e-04"
+    },
+    {
+      "check": "factor_two_gain_bounded",
+      "passed": true,
+      "detail": "range=2.90604--3.57377"
+    },
+    {
+      "check": "factor_two_correlation_extreme",
+      "passed": true,
+      "detail": "minimum |rho|=0.997652"
+    },
+    {
+      "check": "factor_two_aligned_gain_near_unity",
+      "passed": true,
+      "detail": "range=1.20334--1.20811"
+    },
+    {
+      "check": "static_factor_two_gain_bounded",
+      "passed": true,
+      "detail": "range=2.38854--5.54318"
+    },
+    {
+      "check": "static_factor_two_correlation_extreme",
+      "passed": true,
+      "detail": "minimum |rho|=0.998075"
+    },
+    {
+      "check": "static_factor_two_aligned_gain_limited",
+      "passed": true,
+      "detail": "range=1.07824--1.67796"
+    },
+    {
+      "check": "structural_contrast_reproduced",
+      "passed": true,
+      "detail": "shared=633.776165, expanded=3.3511375"
+    },
+    {
+      "check": "prior_precision_scaling_equivalence",
+      "passed": true,
+      "detail": "max absolute matrix error=6.821e-13"
+    },
+    {
+      "check": "static_prior_precision_scaling_equivalence",
+      "passed": true,
+      "detail": "max absolute matrix error=5.684e-14"
+    },
+    {
+      "check": "figure_exists_Fig_prior_scale_sensitivity_png",
+      "passed": true,
+      "detail": "bytes=415423"
+    },
+    {
+      "check": "figure_exists_Fig_prior_scale_sensitivity_pdf",
+      "passed": true,
+      "detail": "bytes=35361"
+    },
+    {
+      "check": "figure_exists_Fig_static_prior_scale_sensitivity_png",
+      "passed": true,
+      "detail": "bytes=490065"
+    },
+    {
+      "check": "figure_exists_Fig_static_prior_scale_sensitivity_pdf",
+      "passed": true,
+      "detail": "bytes=37662"
+    },
+    {
+      "check": "figure_exists_Fig_combined_prior_scale_audit_png",
+      "passed": true,
+      "detail": "bytes=483920"
+    },
+    {
+      "check": "figure_exists_Fig_combined_prior_scale_audit_pdf",
+      "passed": true,
+      "detail": "bytes=33212"
+    },
+    {
+      "check": "combined_pdf_single_page",
+      "passed": true,
+      "detail": "pages=1"
+    },
+    {
+      "check": "combined_pdf_contains_both_prior_blocks",
+      "passed": true,
+      "detail": "four expected panel titles present"
+    }
+  ]
+}

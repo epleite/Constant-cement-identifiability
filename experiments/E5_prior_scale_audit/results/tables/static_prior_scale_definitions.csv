@@ -1,0 +1,10 @@
+nuisance,scientific_group,meaning,baseline_sd,unit,physical_interpretation,baseline_one_sigma_multiplicative_factor,baseline_one_sigma_percentage_points,half_scale_sd,double_scale_sd,fourfold_scale_sd
+phi_bias,state_log_biases,systematic porosity/state bias,0.01,absolute fraction,100 sigma percentage points,,1.0,0.005,0.02,0.04
+vsh_bias,state_log_biases,shale-volume/mineralogical-proxy bias,0.03,absolute fraction,100 sigma percentage points,,3.0,0.015,0.06,0.12
+sw_bias,state_log_biases,water-saturation bias,0.05,absolute fraction,100 sigma percentage points,,5.0,0.025,0.1,0.2
+f_kf_shift,solid_composition_moduli,framework K-feldspar fraction shift,0.1,absolute fraction,100 sigma percentage points,,10.0,0.05,0.2,0.4
+log_clay_mod_scale,solid_composition_moduli,multiplicative clay-modulus factor,0.25,log ratio,exp(sigma),1.2840254166877414,,0.125,0.5,1.0
+brine_salinity_shift,fluid_properties,brine-salinity mass-fraction shift,0.03,mass fraction,100 sigma percentage points,,3.0,0.015,0.06,0.12
+GOR_shift,fluid_properties,gas-oil-ratio shift,20.0,Sm3/Sm3,additive sigma,,,10.0,40.0,80.0
+log_cement_mod_scale,solid_composition_moduli,multiplicative cement-modulus factor,0.2,log ratio,exp(sigma),1.2214027581601699,,0.1,0.4,0.8
+phic_pack_shift,packing_reference,packing critical-porosity reference shift,0.02,absolute fraction,100 sigma percentage points,,2.0,0.01,0.04,0.08

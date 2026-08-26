@@ -1,0 +1,483 @@
+{
+  "analysis": "E3 pressure-design nuisance-prior scale sensitivity",
+  "e3_root": "experiments/E3_break_design",
+  "primary_design_mpa": [
+    5.0,
+    7.5
+  ],
+  "reference_pressure_mpa": 39.0,
+  "baseline_operating_point": {
+    "Vcem_fraction": 0.012546045825196089,
+    "Cn": 5.436001877454284,
+    "static_adjusted_lambda_min": 0.003498495204923069
+  },
+  "baseline_expanded_fabric_result": {
+    "lambda_min_gain": 3.3511375010382625,
+    "spectral_ratio": 0.0006703996686359264,
+    "target_correlation": -0.9984188232644072,
+    "aligned_1pct_gain": 1.2068996463319068
+  },
+  "ranges": {
+    "fabric_state": {
+      "factor_two": {
+        "lambda_min_gain": [
+          3.2315288433723404,
+          3.3849203860269776
+        ],
+        "spectral_ratio": [
+          0.0004350497174707846,
+          0.0009970685659531644
+        ],
+        "target_correlation": [
+          -0.9989728344554887,
+          -0.9976520890971922
+        ],
+        "aligned_1pct_gain": [
+          1.2060370972282366,
+          1.2071233943598323
+        ]
+      },
+      "quarter_to_fourfold": {
+        "lambda_min_gain": [
+          2.883531529755917,
+          3.3937771886251524
+        ],
+        "aligned_1pct_gain": [
+          1.2029217765016693,
+          1.2071801586289994
+        ]
+      }
+    },
+    "stress_calibration": {
+      "factor_two": {
+        "lambda_min_gain": [
+          3.0824375614658064,
+          3.490467241487025
+        ],
+        "spectral_ratio": [
+          0.0006337290914086069,
+          0.0007412230187800482
+        ],
+        "target_correlation": [
+          -0.9985012897663113,
+          -0.9982610558009034
+        ],
+        "aligned_1pct_gain": [
+          1.2052551799729134,
+          1.2076117344748636
+        ]
+      },
+      "quarter_to_fourfold": {
+        "lambda_min_gain": [
+          2.8269575810833865,
+          3.5354396770674446
+        ],
+        "aligned_1pct_gain": [
+          1.2031946910635076,
+          1.2078251159208933
+        ]
+      }
+    },
+    "scenario_endpoint": {
+      "factor_two": {
+        "lambda_min_gain": [
+          3.2385896078838594,
+          3.384156120140607
+        ],
+        "spectral_ratio": [
+          0.0006680105146718639,
+          0.000677222603248061
+        ],
+        "target_correlation": [
+          -0.9984252434151418,
+          -0.9984000016310058
+        ],
+        "aligned_1pct_gain": [
+          1.2059288824005792,
+          1.2071686692287364
+        ]
+      },
+      "quarter_to_fourfold": {
+        "lambda_min_gain": [
+          2.9691318206092387,
+          3.3927719404183425
+        ],
+        "aligned_1pct_gain": [
+          1.203203517607666,
+          1.2072377592730794
+        ]
+      }
+    },
+    "all_pressure": {
+      "factor_two": {
+        "lambda_min_gain": [
+          2.9060430835471025,
+          3.573765779782616
+        ],
+        "spectral_ratio": [
+          0.0003221610356155922,
+          0.0009384963706269914
+        ],
+        "target_correlation": [
+          -0.9992368910768623,
+          -0.9977938144580857
+        ],
+        "aligned_1pct_gain": [
+          1.2033416557081897,
+          1.2081053711588445
+        ]
+      },
+      "quarter_to_fourfold": {
+        "lambda_min_gain": [
+          2.312911163770416,
+          3.65062060868386
+        ],
+        "aligned_1pct_gain": [
+          1.1945980737306736,
+          1.208449855846912
+        ]
+      }
+    }
+  },
+  "static_prior_ranges": {
+    "state_log_biases": {
+      "factor_two": {
+        "lambda_min_gain": [
+          3.24592985335825,
+          3.560018391082112
+        ],
+        "static_lambda_min": [
+          0.003205342594322591,
+          0.003660276300247789
+        ],
+        "combined_lambda_min": [
+          0.011411078585507273,
+          0.011881000114513984
+        ],
+        "spectral_ratio": [
+          0.0006446422277969336,
+          0.0006843099285244993
+        ],
+        "target_correlation": [
+          -0.9984794369185426,
+          -0.9983859408608473
+        ],
+        "aligned_1pct_gain": [
+          1.1827970086574051,
+          1.2433273676633034
+        ]
+      },
+      "quarter_to_fourfold": {
+        "lambda_min_gain": [
+          3.2110260819553145,
+          3.775996301613864
+        ],
+        "aligned_1pct_gain": [
+          1.1727770702154037,
+          1.2726396173815904
+        ]
+      }
+    },
+    "solid_composition_moduli": {
+      "factor_two": {
+        "lambda_min_gain": [
+          2.541932879298574,
+          5.0134889110857594
+        ],
+        "static_lambda_min": [
+          0.00211883897094145,
+          0.005354809641192393
+        ],
+        "combined_lambda_min": [
+          0.010622775685191321,
+          0.013611566689331944
+        ],
+        "spectral_ratio": [
+          0.0005454814820132007,
+          0.0007943247471876091
+        ],
+        "target_correlation": [
+          -0.9987121780955692,
+          -0.9981295146188752
+        ],
+        "aligned_1pct_gain": [
+          1.09463010143619,
+          1.6779599461096693
+        ]
+      },
+      "quarter_to_fourfold": {
+        "lambda_min_gain": [
+          2.2495377437945643,
+          7.138395213727155
+        ],
+        "aligned_1pct_gain": [
+          1.0719167569526262,
+          2.522811238190836
+        ]
+      }
+    },
+    "fluid_properties": {
+      "factor_two": {
+        "lambda_min_gain": [
+          3.3276283157415762,
+          3.3978638431821007
+        ],
+        "static_lambda_min": [
+          0.0034279336273095318,
+          0.003534235466449598
+        ],
+        "combined_lambda_min": [
+          0.011647651729063124,
+          0.01176062201265582
+        ],
+        "spectral_ratio": [
+          0.0006664229623014705,
+          0.0006721398673591294
+        ],
+        "target_correlation": [
+          -0.9984282987481582,
+          -0.9984146466935836
+        ],
+        "aligned_1pct_gain": [
+          1.2027027071633305,
+          1.2145800077421316
+        ]
+      },
+      "quarter_to_fourfold": {
+        "lambda_min_gain": [
+          3.318633395470789,
+          3.476559532647336
+        ],
+        "aligned_1pct_gain": [
+          1.2010385228383222,
+          1.2268191073422792
+        ]
+      }
+    },
+    "packing_reference": {
+      "factor_two": {
+        "lambda_min_gain": [
+          3.312722428795737,
+          3.516049196917811
+        ],
+        "static_lambda_min": [
+          0.0033036340470602443,
+          0.003551599563322849
+        ],
+        "combined_lambda_min": [
+          0.011615739838076511,
+          0.011765463531520748
+        ],
+        "spectral_ratio": [
+          0.0006402068083088895,
+          0.0007479804795231053
+        ],
+        "target_correlation": [
+          -0.9984908322460698,
+          -0.998233403767097
+        ],
+        "aligned_1pct_gain": [
+          1.1493236232451791,
+          1.2261268902731912
+        ]
+      },
+      "quarter_to_fourfold": {
+        "lambda_min_gain": [
+          3.303419500477595,
+          4.20377270717147
+        ],
+        "aligned_1pct_gain": [
+          1.1239658316776973,
+          1.2312279494191225
+        ]
+      }
+    },
+    "all_static": {
+      "factor_two": {
+        "lambda_min_gain": [
+          2.388536885156883,
+          5.543182761472023
+        ],
+        "static_lambda_min": [
+          0.0018452435456520755,
+          0.005868481356278821
+        ],
+        "combined_lambda_min": [
+          0.010228522212976099,
+          0.014017084179327455
+        ],
+        "spectral_ratio": [
+          0.0004177453517338696,
+          0.000816276036661403
+        ],
+        "target_correlation": [
+          -0.9990129537879762,
+          -0.9980748124603256
+        ],
+        "aligned_1pct_gain": [
+          1.0782375489497655,
+          1.5970168098907622
+        ]
+      },
+      "quarter_to_fourfold": {
+        "lambda_min_gain": [
+          2.0459993376395555,
+          9.178399299795151
+        ],
+        "aligned_1pct_gain": [
+          1.0478901786743542,
+          1.9735107603721622
+        ]
+      }
+    }
+  },
+  "one_at_a_time_factor_two_influence_rank": [
+    {
+      "nuisance": "log_stress_shear_scale",
+      "gain_half": 3.485016573991264,
+      "gain_double": 3.0853743790462143,
+      "factor_two_gain_span": 0.39964219494504993
+    },
+    {
+      "nuisance": "stiff_cement_volume_shift",
+      "gain_half": 3.384156120140607,
+      "gain_double": 3.2385896078838594,
+      "factor_two_gain_span": 0.14556651225674777
+    },
+    {
+      "nuisance": "ln_soft_cn_offset",
+      "gain_half": 3.3842379417065303,
+      "gain_double": 3.2498123972737636,
+      "factor_two_gain_span": 0.13442554443276666
+    },
+    {
+      "nuisance": "logP_calibration",
+      "gain_half": 3.35309378146974,
+      "gain_double": 3.343451694691114,
+      "factor_two_gain_span": 0.009642086778625991
+    },
+    {
+      "nuisance": "ln_stiff_cn_offset",
+      "gain_half": 3.3530305900344164,
+      "gain_double": 3.3477905802210626,
+      "factor_two_gain_span": 0.005240009813353819
+    },
+    {
+      "nuisance": "log_stress_bulk_scale",
+      "gain_half": 3.352275504277445,
+      "gain_double": 3.3473624390095216,
+      "factor_two_gain_span": 0.004913065267923233
+    },
+    {
+      "nuisance": "soft_phic_shift",
+      "gain_half": 3.3511506716813386,
+      "gain_double": 3.3510860819794943,
+      "factor_two_gain_span": 6.458970184430868e-05
+    }
+  ],
+  "static_one_at_a_time_factor_two_influence_rank": [
+    {
+      "nuisance": "log_clay_mod_scale",
+      "gain_half": 2.560127877667778,
+      "gain_double": 4.364868665537145,
+      "factor_two_gain_span": 1.8047407878693669
+    },
+    {
+      "nuisance": "f_kf_shift",
+      "gain_half": 3.239641624900034,
+      "gain_double": 3.5553675252268895,
+      "factor_two_gain_span": 0.3157259003268553
+    },
+    {
+      "nuisance": "phic_pack_shift",
+      "gain_half": 3.312722428795737,
+      "gain_double": 3.516049196917811,
+      "factor_two_gain_span": 0.20332676812207406
+    },
+    {
+      "nuisance": "sw_bias",
+      "gain_half": 3.2886156479488577,
+      "gain_double": 3.490429315312682,
+      "factor_two_gain_span": 0.20181366736382422
+    },
+    {
+      "nuisance": "vsh_bias",
+      "gain_half": 3.3034336089941747,
+      "gain_double": 3.4083832390830584,
+      "factor_two_gain_span": 0.1049496300888837
+    },
+    {
+      "nuisance": "brine_salinity_shift",
+      "gain_half": 3.328045866232169,
+      "gain_double": 3.3800808837163365,
+      "factor_two_gain_span": 0.0520350174841675
+    },
+    {
+      "nuisance": "GOR_shift",
+      "gain_half": 3.3488637087454216,
+      "gain_double": 3.356610510733579,
+      "factor_two_gain_span": 0.007746801988157248
+    },
+    {
+      "nuisance": "phi_bias",
+      "gain_half": 3.35348703313508,
+      "gain_double": 3.3504005604900975,
+      "factor_two_gain_span": 0.0030864726449824076
+    },
+    {
+      "nuisance": "log_cement_mod_scale",
+      "gain_half": 3.3511909547560945,
+      "gain_double": 3.350964488738088,
+      "factor_two_gain_span": 0.00022646601800646593
+    }
+  ],
+  "design_reoptimization": {
+    "n_scenarios": 32,
+    "primary_pair_selected_count": 32,
+    "all_scenarios_selected_primary_pair": true,
+    "pair_counts": {
+      "5+7.5": 32
+    }
+  },
+  "static_design_reoptimization": {
+    "n_scenarios": 40,
+    "primary_pair_selected_count": 40,
+    "all_scenarios_selected_primary_pair": true,
+    "pair_counts": {
+      "5+7.5": 40
+    }
+  },
+  "structural_context": {
+    "shared": {
+      "lambda_min_gain": 633.7761651279503,
+      "spectral_ratio": 0.08215091521360803,
+      "target_correlation": -0.3633507104733877,
+      "aligned_1pct_gain": 301.275952579218
+    },
+    "fixed": {
+      "lambda_min_gain": 402.21635195114254,
+      "spectral_ratio": 0.05030681013928961,
+      "target_correlation": -0.6815503345066279,
+      "aligned_1pct_gain": 189.06135171991292
+    },
+    "nuisance": {
+      "lambda_min_gain": 368.4325197361159,
+      "spectral_ratio": 0.05774932759398574,
+      "target_correlation": -0.7006896332333136,
+      "aligned_1pct_gain": 180.51455554460745
+    },
+    "expanded_nuisance": {
+      "lambda_min_gain": 3.3511375010382625,
+      "spectral_ratio": 0.0006703996686359264,
+      "target_correlation": -0.9984188232644072,
+      "aligned_1pct_gain": 1.2068996463319068
+    }
+  },
+  "scale_parameterization_equivalence_max_abs_error": 6.821210263296962e-13,
+  "static_scale_parameterization_equivalence_max_abs_error": 5.684341886080802e-14,
+  "interpretation": {
+    "robust": "Across factor-of-two changes in pressure and static nuisance scales, the expanded-fabric experiment remains strongly correlated; the 1% target-aligned discrepancy leaves about a 1.2-fold gain for pressure-prior changes and at most 1.68-fold across grouped static-prior changes.",
+    "conditional": "The exact 3.35-fold value is conditional on the stated priors; pressure-prior factor-two changes give 2.91--3.57, whereas grouped static-prior changes give 2.39--5.54 because the gain denominator also changes.",
+    "structural": "The approximately 634-to-3.35 collapse is mainly a change in target/fabric linkage, not a consequence of the numerical prior scales alone."
+  }
+}

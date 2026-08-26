@@ -1,0 +1,11 @@
+PASS
+
+The complete package was copied to a fresh directory under /tmp and imported
+with only its own src directory on PYTHONPATH. The relocated copy loaded the
+vendored E1/RPIA implementation, selected 59 pooled Hugin samples, and
+reproduced both anchors:
+
+- A_raw = 0.3026134543411656
+- pooled Cn = 5.436001877454284
+
+Test executed on 2026-08-24.

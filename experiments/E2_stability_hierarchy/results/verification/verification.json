@@ -1,0 +1,232 @@
+{
+  "passed": true,
+  "n_checks": 45,
+  "n_failed": 0,
+  "checks": [
+    {
+      "check": "frozen hash: vendor/e1_v1/src/e1_analysis.py",
+      "passed": true,
+      "detail": "c5ada1583b454d05cd38ff28d1dfce73078e27ae2394ce761e9c86b0fc2d331b"
+    },
+    {
+      "check": "frozen hash: vendor/e1_v1/vendor/rpia_v1/rpia_core.py",
+      "passed": true,
+      "detail": "b41a6ec9471ffccb03d586cb8c8c1231a937a909e72f3aeb9434b03b2d1ab80a"
+    },
+    {
+      "check": "frozen hash: vendor/e1_v1/data/compact/19A_training_window.csv",
+      "passed": true,
+      "detail": "33dfc5cb97a369542a7856c99f093688276d19b4ddb8d439270786818692d91a"
+    },
+    {
+      "check": "frozen hash: vendor/e1_v1/data/compact/BT2_training_window.csv",
+      "passed": true,
+      "detail": "db72d040b8bdef03f0c6cf0345038fc722cebc36b6600c35275e800ebc7e6d46"
+    },
+    {
+      "check": "sample count 19A",
+      "passed": true,
+      "detail": "29"
+    },
+    {
+      "check": "sample count BT2",
+      "passed": true,
+      "detail": "30"
+    },
+    {
+      "check": "sample count pooled",
+      "passed": true,
+      "detail": "59"
+    },
+    {
+      "check": "E1 Vcem anchor 19A",
+      "passed": true,
+      "detail": "0.024592733574879642"
+    },
+    {
+      "check": "E1 Cn anchor 19A",
+      "passed": true,
+      "detail": "4.7029523059115945"
+    },
+    {
+      "check": "E1 Vcem anchor BT2",
+      "passed": true,
+      "detail": "0.002709648210837285"
+    },
+    {
+      "check": "E1 Cn anchor BT2",
+      "passed": true,
+      "detail": "8.292355473009664"
+    },
+    {
+      "check": "E1 Vcem anchor pooled",
+      "passed": true,
+      "detail": "0.012546045825196089"
+    },
+    {
+      "check": "E1 Cn anchor pooled",
+      "passed": true,
+      "detail": "5.436001877454284"
+    },
+    {
+      "check": "factored derivative identity raw",
+      "passed": true,
+      "detail": "factored=20.2715602997, target=20.2715602997"
+    },
+    {
+      "check": "factored derivative identity adjusted",
+      "passed": true,
+      "detail": "factored=19.9617655331, target=19.9617655331"
+    },
+    {
+      "check": "bootstrap requested counts",
+      "passed": true,
+      "detail": "{'IID': 120, 'MBB_12m': 120, 'MBB_20m_primary': 400, 'MBB_40m': 120}"
+    },
+    {
+      "check": "bootstrap all successful",
+      "passed": true,
+      "detail": "{True: 760}"
+    },
+    {
+      "check": "LOTO bootstrap count",
+      "passed": true,
+      "detail": "600"
+    },
+    {
+      "check": "LOTO bootstrap all successful",
+      "passed": true,
+      "detail": "{True: 600}"
+    },
+    {
+      "check": "full mode summary",
+      "passed": true,
+      "detail": "False"
+    },
+    {
+      "check": "bootstrap critical values finite",
+      "passed": true,
+      "detail": "nonfinite=0"
+    },
+    {
+      "check": "hierarchical bootstrap constraints nonnegative",
+      "passed": true,
+      "detail": "min={'hierarchy_qstar_delta': 2.499108205711309e-06, 'hierarchy_Cn_delta': 2.0214973517340693e-07}"
+    },
+    {
+      "check": "separate lower bound observed_data/fixed_nuisance",
+      "passed": true,
+      "detail": "separate=149.530881795, constrained_min=149.62399249"
+    },
+    {
+      "check": "shared q equality observed_data/fixed_nuisance",
+      "passed": true,
+      "detail": "2.203098814490545e-16"
+    },
+    {
+      "check": "shared Cn equality observed_data/fixed_nuisance",
+      "passed": true,
+      "detail": "0.0"
+    },
+    {
+      "check": "separate lower bound observed_data/nonlinear_MAP",
+      "passed": true,
+      "detail": "separate=87.4944445511, constrained_min=87.5186828401"
+    },
+    {
+      "check": "shared q equality observed_data/nonlinear_MAP",
+      "passed": true,
+      "detail": "3.3306690738754696e-16"
+    },
+    {
+      "check": "shared Cn equality observed_data/nonlinear_MAP",
+      "passed": true,
+      "detail": "0.0"
+    },
+    {
+      "check": "separate lower bound local_geometry/local_raw_geometry",
+      "passed": true,
+      "detail": "separate=0, constrained_min=0.00196527798385"
+    },
+    {
+      "check": "shared q equality local_geometry/local_raw_geometry",
+      "passed": true,
+      "detail": "6.704706234650359e-16"
+    },
+    {
+      "check": "shared Cn equality local_geometry/local_raw_geometry",
+      "passed": true,
+      "detail": "0.0"
+    },
+    {
+      "check": "separate lower bound local_geometry/local_Schur_geometry",
+      "passed": true,
+      "detail": "separate=0, constrained_min=0.00129737660791"
+    },
+    {
+      "check": "shared q equality local_geometry/local_Schur_geometry",
+      "passed": true,
+      "detail": "3.3393426912553537e-16"
+    },
+    {
+      "check": "shared Cn equality local_geometry/local_Schur_geometry",
+      "passed": true,
+      "detail": "0.0"
+    },
+    {
+      "check": "LOTO point qstar closer than local exponential",
+      "passed": true,
+      "detail": "[{\"train\":\"19A\",\"test\":\"BT2\",\"adjustment\":\"raw\",\"qstar_level_ratio\":0.9935845385,\"local_exponential_level_ratio\":1.4730789812},{\"train\":\"19A\",\"test\":\"BT2\",\"adjustment\":\"adjusted\",\"qstar_level_ratio\":1.0003109123,\"local_exponential_level_ratio\":1.4823263918},{\"train\":\"BT2\",\"test\":\"19A\",\"adjustment\":\"raw\",\"qstar_level_ratio\":1.0329195078,\"local_exponential_level_ratio\":6.4270208027},{\"train\":\"BT2\",\"test\":\"19A\",\"adjustment\":\"adjusted\",\"qstar_level_ratio\":1.0296636509,\"local_exponential_level_ratio\":6.419268356}]"
+    },
+    {
+      "check": "LOTO shape qstar beats local tangent",
+      "passed": true,
+      "detail": "{\"('19A', 'BT2', 'adjusted')\":0.0454989227,\"('19A', 'BT2', 'raw')\":0.0390899339,\"('BT2', '19A', 'adjusted')\":0.0046401625,\"('BT2', '19A', 'raw')\":0.0036570082}"
+    },
+    {
+      "check": "all adjusted profiles converged",
+      "passed": true,
+      "detail": "rows=72"
+    },
+    {
+      "check": "deterministic first primary A_raw",
+      "passed": true,
+      "detail": "recomputed=0.308184653550269, stored=0.308184653550269"
+    },
+    {
+      "check": "deterministic first primary Gamma_adjusted",
+      "passed": true,
+      "detail": "recomputed=1.63192623195581, stored=1.63192623195581"
+    },
+    {
+      "check": "figure exists Fig_E2_bootstrap_stability.png",
+      "passed": true,
+      "detail": "596501"
+    },
+    {
+      "check": "figure exists Fig_E2_bootstrap_stability.pdf",
+      "passed": true,
+      "detail": "58470"
+    },
+    {
+      "check": "figure exists Fig_E2_loto_transport.png",
+      "passed": true,
+      "detail": "262312"
+    },
+    {
+      "check": "figure exists Fig_E2_loto_transport.pdf",
+      "passed": true,
+      "detail": "27407"
+    },
+    {
+      "check": "figure exists Fig_E2_hierarchical_comparison.png",
+      "passed": true,
+      "detail": "286576"
+    },
+    {
+      "check": "figure exists Fig_E2_hierarchical_comparison.pdf",
+      "passed": true,
+      "detail": "25546"
+    }
+  ]
+}
