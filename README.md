@@ -45,7 +45,9 @@ small and the fully non-linear ridge stays open over the tested domain.
 
 ## Quick start
 
-Python 3.11 or newer is recommended.
+Python 3.12 is the frozen publication environment. The exact numerical
+dependencies are pinned in `requirements.txt` so verification does not depend
+on later optimizer or array-library releases.
 
 ```bash
 python -m venv .venv

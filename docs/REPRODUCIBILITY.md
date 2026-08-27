@@ -2,7 +2,7 @@
 
 ## Environment
 
-Python 3.11 or later is recommended. From the repository root:
+Python 3.12 is the frozen publication environment. From the repository root:
 
 ```bash
 python -m venv .venv
@@ -11,9 +11,10 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-The root requirements intentionally contain only runtime dependencies. The
+The root requirements contain the exact runtime versions used for the frozen
+publication outputs, including the PDF reader used by the E5 verifier. The
 individual `environment.yml` and `requirements.txt` files inside E1--E3 record
-their frozen environments.
+the same frozen numerical stack.
 
 ## Three execution modes
 

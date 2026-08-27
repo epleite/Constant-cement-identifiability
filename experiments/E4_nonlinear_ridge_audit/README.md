@@ -62,6 +62,7 @@ non-linear forward model with up to 16 physical nuisance variables.
 
 ## Dependencies
 
-Python 3.11 or newer with NumPy, pandas, SciPy, and Matplotlib. The exact
+Python 3.12 with the pinned NumPy, pandas, SciPy, Matplotlib, and Pillow
+versions in `requirements.txt`. The exact
 constant-cement and pressure-scenario implementations are imported from the
 frozen E1 and E3 packages in this repository.
