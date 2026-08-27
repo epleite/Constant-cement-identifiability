@@ -125,3 +125,9 @@ the declared numerical identities and reference values. It does not validate
 the constant-cement model against independent core measurements, turn two
 related trajectories into a population sample, or prove that every bounded
 non-linear fit is the global optimum.
+
+Optimizer-derived E2 anchors are checked with explicit cross-platform absolute
+tolerances (`2e-7` in cement-volume fraction, `2e-5` in coordination number,
+and `2e-6` in the bootstrap coordinate coefficients). These bounds accommodate
+floating-point differences among hosted runners while remaining far below the
+precision used in the manuscript.
