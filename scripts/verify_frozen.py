@@ -4,8 +4,10 @@
 from __future__ import annotations
 
 import hashlib
+import shutil
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 
@@ -42,19 +44,44 @@ def verify_checksums(root: Path) -> None:
 
 
 def main() -> None:
-    checks = [
-        (ROOT / "experiments" / "E1_discover_explain", [sys.executable, "scripts/verify_e1.py"]),
-        (ROOT / "experiments" / "E2_stability_hierarchy", [sys.executable, "scripts/verify_e2.py"]),
-        (ROOT / "experiments" / "E3_break_design", [sys.executable, "scripts/verify_e3.py"]),
-        (ROOT / "analysis_checks" / "qstar_finite_form", [sys.executable, "verify.py"]),
-        (ROOT / "experiments" / "E4_nonlinear_ridge_audit", [sys.executable, "verify.py"]),
-        (
-            ROOT / "experiments" / "E5_prior_scale_audit",
-            [sys.executable, "scripts/verify_prior_scale_sweep.py"],
-        ),
-    ]
-    for cwd, command in checks:
-        run(command, cwd)
+    # Several scientific verifiers intentionally emit machine-readable audit
+    # reports.  Run them in an isolated copy so --verify-only is genuinely
+    # read-only and platform-specific last digits cannot alter frozen files.
+    with tempfile.TemporaryDirectory(prefix="constant-cement-verify-") as tmp:
+        isolated_root = Path(tmp) / "repository"
+        shutil.copytree(
+            ROOT,
+            isolated_root,
+            ignore=shutil.ignore_patterns(".git", "__pycache__", ".mplconfig"),
+        )
+        checks = [
+            (
+                isolated_root / "experiments" / "E1_discover_explain",
+                [sys.executable, "scripts/verify_e1.py"],
+            ),
+            (
+                isolated_root / "experiments" / "E2_stability_hierarchy",
+                [sys.executable, "scripts/verify_e2.py"],
+            ),
+            (
+                isolated_root / "experiments" / "E3_break_design",
+                [sys.executable, "scripts/verify_e3.py"],
+            ),
+            (
+                isolated_root / "analysis_checks" / "qstar_finite_form",
+                [sys.executable, "verify.py"],
+            ),
+            (
+                isolated_root / "experiments" / "E4_nonlinear_ridge_audit",
+                [sys.executable, "verify.py"],
+            ),
+            (
+                isolated_root / "experiments" / "E5_prior_scale_audit",
+                [sys.executable, "scripts/verify_prior_scale_sweep.py"],
+            ),
+        ]
+        for cwd, command in checks:
+            run(command, cwd)
     for name in ("E1_discover_explain", "E2_stability_hierarchy", "E3_break_design"):
         verify_checksums(ROOT / "experiments" / name)
     verify_checksums(ROOT)

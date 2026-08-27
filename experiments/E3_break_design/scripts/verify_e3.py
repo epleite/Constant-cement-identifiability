@@ -20,6 +20,14 @@ import e3_model as pm  # noqa: E402
 
 checks: list[dict[str, object]] = []
 
+# Cross-platform tolerances for optimizer- and eigensolver-derived E1 anchors.
+# They absorb last-digit variation across CPU/BLAS/libm and Python patch
+# releases while remaining far below the precision used in the manuscript.
+E1_VCEM_ATOL = 2e-7
+E1_CN_ATOL = 2e-5
+E1_LAMBDA_MIN_ATOL = 2e-6
+E1_COORD_ATOL = 2e-6
+
 
 def check(name: str, condition: bool, detail: object = "") -> None:
     checks.append({"name": name, "passed": bool(condition), "detail": str(detail)})
@@ -105,12 +113,20 @@ def main() -> int:
     check("pooled sample count", len(baseline.pooled) == 59)
     check(
         "E1 Vcem anchor",
-        close(float(baseline.theta[0]), e1_expected["pooled_operating_point"]["Vcem_fraction"]),
+        close(
+            float(baseline.theta[0]),
+            e1_expected["pooled_operating_point"]["Vcem_fraction"],
+            atol=E1_VCEM_ATOL,
+        ),
         baseline.theta[0],
     )
     check(
         "E1 Cn anchor",
-        close(float(np.exp(baseline.theta[1])), e1_expected["pooled_operating_point"]["Cn"]),
+        close(
+            float(np.exp(baseline.theta[1])),
+            e1_expected["pooled_operating_point"]["Cn"],
+            atol=E1_CN_ATOL,
+        ),
         np.exp(baseline.theta[1]),
     )
     check(
@@ -118,6 +134,7 @@ def main() -> int:
         close(
             float(np.linalg.eigvalsh(baseline.gram_adjusted)[0]),
             e1_expected["pooled_operating_point"]["adjusted_lambda_min"],
+            atol=E1_LAMBDA_MIN_ATOL,
         ),
     )
     check(
@@ -125,6 +142,7 @@ def main() -> int:
         close(
             baseline.coordinate["A_adjusted"],
             e1_expected["physics_factored_coordinate"]["A_adjusted"],
+            atol=E1_COORD_ATOL,
         ),
     )
     check(
@@ -132,6 +150,7 @@ def main() -> int:
         close(
             baseline.coordinate["Gamma_adjusted"],
             e1_expected["physics_factored_coordinate"]["Gamma_adjusted"],
+            atol=E1_COORD_ATOL,
         ),
     )
     for key, relative in [

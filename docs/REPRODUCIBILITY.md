@@ -25,8 +25,9 @@ python scripts/run_all.py --verify-only
 ```
 
 This runs the verification suites for E1--E5 and the finite-coordinate check,
-then validates every file against the root SHA256 manifest. It does not change
-results.
+then validates every file against the root SHA256 manifest. The scientific
+verifiers run in an isolated temporary copy, so platform-specific audit output
+cannot change the frozen repository files.
 
 ### Safe reduced smoke test
 
@@ -131,3 +132,8 @@ tolerances (`2e-7` in cement-volume fraction, `2e-5` in coordination number,
 and `2e-6` in the bootstrap coordinate coefficients). These bounds accommodate
 floating-point differences among hosted runners while remaining far below the
 precision used in the manuscript.
+
+The E3 verifier applies the same anchor philosophy (`2e-7` in cement-volume
+fraction, `2e-5` in coordination number, and `2e-6` for the adjusted information
+eigenvalue and coordinate coefficients). Algebraic identities and categorical
+scientific checks retain their stricter tolerances.
