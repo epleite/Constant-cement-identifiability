@@ -1,4 +1,4 @@
-name: jag-rc3-source-inspection
+name: jag-rc3-maintex-dump
 
 on:
   push:
@@ -13,31 +13,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Download and inspect source package
+      - name: Download source and print main.tex
         env:
           SOURCE_URL: 'https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-ec90-820e-9bb2-80a7d3b4dc24/raw?se=2026-10-29T17%3A21%3A24Z&sp=r&sv=2026-02-06&sr=b&scid=ce6c9e96-a8ad-52e2-acf3-84473418eede&skoid=a6356955-0ca0-4033-9150-c0c162458498&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-29T15%3A10%3A53Z&ske=2026-10-30T15%3A10%3A53Z&sks=b&skv=2026-02-06&sig=DErQe1C5NIItkbXEFweTPwndpmrD5jmUMqsK3UXLSCA%3D'
         run: |
-          set -euxo pipefail
-          mkdir -p jag_source report
+          set -euo pipefail
           curl -fL "$SOURCE_URL" -o source.zip
-          unzip -q source.zip -d jag_source
-          {
-            echo '=== TREE ==='
-            find jag_source -type f -printf '%p\t%s bytes\n' | sort
-            echo
-            echo '=== TEX FILES ==='
-            find jag_source -type f -name '*.tex' -print
-            echo
-            echo '=== TITLE MATCHES ==='
-            grep -RIl 'Facies-Conditioned Diffusion Augmentation\|Facies-conditioned synthetic well logs' jag_source || true
-          } | tee report/listing.txt
-          while IFS= read -r f; do
-            echo "=== FILE: $f ===" >> report/tex_content.txt
-            cat "$f" >> report/tex_content.txt
-            echo >> report/tex_content.txt
-          done < <(find jag_source -type f -name '*.tex' | sort)
-      - uses: actions/upload-artifact@v4
-        with:
-          name: jag-rc3-source-inspection
-          path: report
-          retention-days: 1
+          mkdir source
+          unzip -q source.zip -d source
+          echo '===== MAIN TEX BEGIN ====='
+          nl -ba source/main.tex
+          echo '===== MAIN TEX END ====='
+          echo '===== README BEGIN ====='
+          cat source/README.md
+          echo '===== README END ====='
